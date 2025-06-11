@@ -13,3 +13,4 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
+console.log("Hello World");
