@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профильная математика - Теория</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img\logo.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="lessons2.html">Квесты</a></li>
+                <li><a href="#">Инструменты</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Прогресс</a></li>
+            </ul>
+
+            <a href="#regis" class="login-btn">Войти</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="theory">
+        <h1 class="theory-title">Теория по профильной математике</h1>
+
+        <div class="section">
+            <h2 class="theory-subtitle">1. Математический анализ</h2>
+
+            <h3 class="theory-podtitle">1.1. Пределы</h3>
+            <div class="formula">
+                lim<sub>x→a</sub> f(x) = L
+            </div>
+            <p>Функция f(x) стремится к L при x, стремящемся к a.</p>
+
+            <div class="important">
+                <strong>Замечательные пределы:</strong><br>
+                1. lim<sub>x→0</sub> (sin x)/x = 1<br>
+                2. lim<sub>x→∞</sub> (1 + 1/x)<sup>x</sup> = e ≈ 2.71828
+            </div>
+
+            <h3>1.2. Производные</h3>
+            <div class="formula">
+                f'(x) = lim<sub>Δx→0</sub> [f(x + Δx) - f(x)]/Δx
+            </div>
+
+            <table>
+                <tr>
+                    <th>Функция</th>
+                    <th>Производная</th>
+                </tr>
+                <tr>
+                    <td>x<sup>n</sup></td>
+                    <td>n·x<sup>n-1</sup></td>
+                </tr>
+                <tr>
+                    <td>e<sup>x</sup></td>
+                    <td>e<sup>x</sup></td>
+                </tr>
+                <tr>
+                    <td>ln x</td>
+                    <td>1/x</td>
+                </tr>
+                <tr>
+                    <td>sin x</td>
+                    <td>cos x</td>
+                </tr>
+                <tr>
+                    <td>cos x</td>
+                    <td>-sin x</td>
+                </tr>
+            </table>
+
+            <h3>1.3. Интегралы</h3>
+            <div class="formula">
+                ∫f(x)dx = F(x) + C, где F'(x) = f(x)
+            </div>
+
+            <div class="example">
+                <strong>Пример:</strong> ∫x<sup>2</sup>dx = x<sup>3</sup>/3 + C
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Линейная алгебра</h2>
+
+            <h3>2.1. Матрицы</h3>
+            <p>Матрица размера m×n — прямоугольная таблица чисел:</p>
+            <div class="formula-box formula">
+                \( A = [a_{ij}] = \begin{bmatrix}
+                a_{11} & a_{12} & \cdots & a_{1n} \\
+                a_{21} & a_{22} & \cdots & a_{2n} \\
+                \vdots & \vdots & \ddots & \vdots \\
+                a_{m1} & a_{m2} & \cdots & a_{mn}
+                \end{bmatrix} \)
+            </div>
+
+            <h3>2.2. Определитель матрицы</h3>
+            <p>Для матрицы 2×2:</p>
+            <div class="formula">
+                \det A =
+                \begin{vmatrix}
+                a & b \\
+                c & d
+                \end{vmatrix}
+                = ad - bc
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Теория вероятностей</h2>
+
+            <h3>3.1. Основные понятия</h3>
+            <p>Вероятность события A:</p>
+            <div class="formula">
+                P(A) = n(A)/n(S)
+            </div>
+            <p>где n(A) — число благоприятных исходов, n(S) — общее число исходов.</p>
+
+            <h3>3.2. Формула Бернулли</h3>
+            <div class="formula">
+                P<sub>n</sub>(k) = C<sub>n</sub><sup>k</sup>·p<sup>k</sup>·(1-p)<sup>n-k</sup>
+            </div>
+            <p>где C<sub>n</sub><sup>k</sup> — число сочетаний, p — вероятность успеха в одном испытании.</p>
+        </div>
+
+        <div class="section">
+            <h2>4. Геометрия в пространстве</h2>
+
+            <h3>4.1. Векторы</h3>
+            <p>Вектор — направленный отрезок с координатами (x, y, z).</p>
+            <div class="formula">
+                \vec{a} = (x_1, y_1, z_1), \quad \vec{b} = (x_2, y_2, z_2)
+            </div>
+
+            <p>Скалярное произведение:</p>
+            <div class="formula">
+                \vec{a}·\vec{b} = x_1x_2 + y_1y_2 + z_1z_2 = |\vec{a}|·|\vec{b}|·cosφ
+            </div>
+
+            <h3>4.2. Уравнение плоскости</h3>
+            <div class="formula">
+                Ax + By + Cz + D = 0
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Комплексные числа</h2>
+
+            <div class="formula">
+                z = a + bi, \quad i^2 = -1
+            </div>
+
+            <p>Модуль комплексного числа:</p>
+            <div class="formula">
+                |z| = √(a² + b²)
+            </div>
+
+            <p>Тригонометрическая форма:</p>
+            <div class="formula">
+                z = r(cosφ + isinφ), \quad r = |z|, φ = arg z
+            </div>
+        </div>
+        <a class="start-lesson-button" href="test.html">Пройти тест</a>
+    </main>
+
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-section logo-section">
+                <img src="img/Group 44.png" alt="Language2Go Logo">
+                <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
+                <!-- <a href=""><img src="img/image 10.png" alt="Payment Methods" style="width: 50px;"></a>
+                <a href=""><img src="img/image 9.png" alt="Payment Methods" style="width: 50px;"></a>
+                <a href=""><img src="img/image 11.png" alt="Payment Methods" style="width: 50px;"></a> -->
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Обучение</h3>
+                <ul>
+                    <li><a href="#">Все языки</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Детям и подросткам</a></li>
+                    <li><a href="#">Мини-курсы</a></li>
+                    <li><a href="#">Тренажеры</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3 class="footer-heading">Контакты</h3>
+                <p>+7 (8362) 00-00-00</p>
+                <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
+                <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
+                <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
