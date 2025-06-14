@@ -35,83 +35,108 @@
         <div class="container">
             <div class="math-dashboard">
                 <div class="math-learning-app">
-                    <div class="dropdown">
+                    <!-- Выпадающий список "Выберите предмет" -->
+                    <div class="dropdown subject-dropdown">
                         <button class="dropdown-btn">Выберите предмет</button>
                         <div class="dropdown-content">
-                            <div class="dropdown-item">Выберите предмет</div>
-                            <div class="dropdown-item">Геометрия</div>
-                            <div class="dropdown-item">Алгебра</div>
-                            <div class="dropdown-item">Прикладная мат.</div>
-                            <div class="dropdown-item">Статистика</div>
-                            <div class="dropdown-item">Анализ</div>
+                            <div class="dropdown-item" data-value="all">Все предметы</div>
+                            <div class="dropdown-item" data-value="Геометрия">Геометрия</div>
+                            <div class="dropdown-item" data-value="Алгебра">Алгебра</div>
+                            <div class="dropdown-item" data-value="Прикладная мат.">Прикладная мат.</div>
+                            <div class="dropdown-item" data-value="Статистика">Статистика</div>
+                            <div class="dropdown-item" data-value="Анализ">Анализ</div>
                         </div>
                     </div>
 
                     <!-- Выпадающий список "Уровень знаний" -->
-                    <div class="dropdown">
+                    <div class="dropdown level-dropdown">
                         <button class="dropdown-btn">Уровень знаний</button>
                         <div class="dropdown-content">
-                            <div class="dropdown-item">Уровень знаний</div>
-                            <div class="dropdown-item">Начальный</div>
-                            <div class="dropdown-item">Средний</div>
-                            <div class="dropdown-item">Продвинутый</div>
+                            <div class="dropdown-item" data-value="all">Все уровни</div>
+                            <div class="dropdown-item" data-value="Начальный">Начальный</div>
+                            <div class="dropdown-item" data-value="Средний">Средний</div>
+                            <div class="dropdown-item" data-value="Продвинутый">Продвинутый</div>
                         </div>
                     </div>
 
                     <!-- Выпадающий список "Формат обучения" -->
-                    <div class="dropdown">
+                    <div class="dropdown format-dropdown">
                         <button class="dropdown-btn">Формат обучения</button>
                         <div class="dropdown-content">
-                            <div class="dropdown-item">Формат обучения</div>
-                            <div class="dropdown-item">Теория</div>
-                            <div class="dropdown-item">Практика</div>
-                            <div class="dropdown-item">Симуляции</div>
+                            <div class="dropdown-item" data-value="all">Все форматы</div>
+                            <div class="dropdown-item" data-value="Теория">Теория</div>
+                            <div class="dropdown-item" data-value="Практика">Практика</div>
+                            <div class="dropdown-item" data-value="Симуляции">Симуляции</div>
                         </div>
                     </div>
 
                 </div>
                 <div class="math-subjects-grid">
+                    <div class="no-results-message" style="display: none;">
+                        <div class="empty-state">
+                            <h3>Ничего не найдено</h3>
+                            <p>Попробуйте изменить параметры фильтрации</p>
+                        </div>
+                    </div>
                     <div class="courses">
                         <div class="course-card cards">
                             <h2>Профильная математика</h2>
+                            <p class="course-text">Уровень: Средний</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
 
                         <div class="course-card">
                             <h2>Базовая математика</h2>
+                            <p class="course-text">Уровень: Начальный</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
 
                         <div class="course-card">
                             <h2>Высшая математика</h2>
+                            <p class="course-text">Уровень: Продвинутый</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
 
                         <div class="course-card">
                             <h2>Дискретная математика</h2>
+                            <p class="course-text">Уровень: Средний</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
 
                         <div class="course-card">
                             <h2>Арифметика</h2>
+                            <p class="course-text">Уровень: Начальный</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
 
                         <div class="course-card">
                             <h2>Теория чисел</h2>
+                            <p class="course-text">Уровень: Продвинутый</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
                         <div class="course-card">
                             <h2>Алгебра</h2>
+                            <p class="course-text">Уровень: Средний</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
 
                         <div class="course-card">
                             <h2>Геометрия</h2>
+                            <p class="course-text">Уровень: Начальный</p>
+                            <p class="course-text">Формат обучения: Практика</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
                         <div class="course-card">
                             <h2>Теория вероятностей</h2>
+                            <p class="course-text">Уровень: Средний</p>
+                            <p class="course-text">Формат обучения: Теория</p>
                             <button class="start-lesson-button">Начать урок</button>
                         </div>
                     </div>
@@ -119,6 +144,9 @@
             </div>
         </div>
     </main>
+
+    <script>
+    </script>
 
     <footer class="footer">
         <div class="container_footer">
