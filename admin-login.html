@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в Админ-панель</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="admin-login-container">
+        <div class="admin-login-card">
+            <h1>Вход для Администратора</h1>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="username">Логин:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-primary admin-login-btn">Войти</button>
+                <p id="loginError" class="error-message" style="display:none; color: red; margin-top: 15px;"></p>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('adminLoginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const loginError = document.getElementById('loginError');
+
+            // Простая имитация проверки логина/пароля
+            // В реальном приложении это был бы AJAX-запрос на сервер
+            if (username === 'admin' && password === 'adminpass') {
+                // Если успешно, перенаправляем на панель управления
+                window.location.href = 'admin-dashboard.html';
+            } else {
+                // Показываем сообщение об ошибке
+                loginError.textContent = 'Неверный логин или пароль.';
+                loginError.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель - Уроки</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="admin-header">
+        <nav class="admin-nav">
+            <div class="admin-logo">Админ-панель</div>
+            <div class="admin-nav-right">
+                <span>Привет, Администратор</span>
+                <button class="admin-logout-btn" onclick="location.href='admin-login.html'">Выйти</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-main-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-dashboard.html">Главная</a></li>
+                <li><a href="admin-users.html">Пользователи</a></li>
+                <li><a href="admin-lessons.html" class="active">Уроки</a></li>
+                <li><a href="index.html">На сайт</a></li>
+            </ul>
+        </aside>
+        <section class="admin-content">
+            <h1>Список Уроков</h1>
+            <button class="btn-primary admin-add-btn" onclick="alert('Открывается форма добавления урока')">Добавить новый урок</button>
+
+            <div class="admin-table-container">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Название урока</th>
+                            <th>Предмет</th>
+                            <th>Уровень</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Основы Арифметики</td>
+                            <td>Математика</td>
+                            <td>Начальный</td>
+                            <td>
+                                <button class="btn-action edit" onclick="alert('Редактировать урок 101')">Редактировать</button>
+                                <button class="btn-action delete" onclick="alert('Удалить урок 101')">Удалить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Введение в Алгебру</td>
+                            <td>Математика</td>
+                            <td>Начальный</td>
+                            <td>
+                                <button class="btn-action edit" onclick="alert('Редактировать урок 102')">Редактировать</button>
+                                <button class="btn-action delete" onclick="alert('Удалить урок 102')">Удалить</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
