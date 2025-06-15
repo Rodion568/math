@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="admin-header">
+        <nav class="admin-nav">
+            <div class="admin-logo">Админ-панель</div>
+            <div class="admin-nav-right">
+                <span>Привет, Администратор</span>
+                <button class="admin-logout-btn" onclick="location.href='admin-login.html'">Выйти</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-main-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-dashboard.html" class="active">Главная</a></li>
+                <li><a href="admin-users.html">Пользователи</a></li>
+                <li><a href="admin-lessons.html">Уроки</a></li>
+                <li><a href="http://127.0.0.1:5500/math/index.html">На сайт</a></li>
+            </ul>
+        </aside>
+        <section class="admin-content">
+            <h1>Добро пожаловать в Админ-панель</h1>
+            <p>Выберите раздел для управления данными.</p>
+            <div class="admin-dashboard-links">
+                <a href="admin-users.html" class="admin-card-link">
+                    <div class="admin-dashboard-card">
+                        <h2>Управление Пользователями</h2>
+                        <p>Добавляйте, редактируйте и удаляйте пользователей.</p>
+                    </div>
+                </a>
+                <a href="admin-lessons.html" class="admin-card-link">
+                    <div class="admin-dashboard-card">
+                        <h2>Управление Уроками</h2>
+                        <p>Добавляйте, редактируйте и удаляйте уроки.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

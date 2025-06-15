@@ -1,0 +1,299 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f7f9fc;
+    color: #003370;
+    line-height: 1.6;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 100vh;
+    box-sizing: border-box; 
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+/* Profile Header (Back Link) */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1a73e8; /* Blue-purple color */
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.back-link .icon {
+    margin-right: 10px;
+    color: #6C63FF;
+    width: 24px;
+    height: 24px;
+    stroke-width: 2; /* Make the arrow thicker */
+}
+
+/* Profile Details Box */
+.profile-details {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+
+.profile-details h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003370;
+    margin-bottom: 15px;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #003370;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-details p span {
+    font-weight: 600;
+    margin-left: 5px;
+    font-family: 'Inter', sans-serif; /* For login/password values */
+}
+
+.password-row {
+    display: flex;
+    align-items: center;
+}
+
+.eye-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    display: flex; /* To center the icon */
+    align-items: center;
+}
+
+.eye-icon {
+    color: #003370;
+    width: 20px;
+    height: 20px;
+}
+
+/* Courses Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: #EEEEFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-icon {
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon img {
+    width: 90px; /* Adjust size of icon images */
+    height: 90px;
+}
+
+.course-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #003370;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 15px;
+    color: #003370;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: #D2D2FF;
+    color: #003370;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #c1c1ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .profile-details {
+        padding: 20px;
+    }
+
+    .profile-details h1 {
+        font-size: 24px;
+    }
+
+    .profile-details p {
+        font-size: 15px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+        gap: 20px;
+    }
+
+    .course-card {
+        padding: 20px;
+    }
+
+    .card-icon {
+        padding: 15px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .card-icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .course-card h3 {
+        font-size: 20px;
+    }
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: #EEEEFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Позволяет ссылкам занимать доступное пространство */
+    justify-content: center; /* <--- ИЗМЕНИТЕ ЭТУ СТРОКУ, чтобы центрировать элементы меню */
+}
+
+
+    .user-dropdown {
+    position: relative; /* Относительное позиционирование для выпадающего списка */
+    display: inline-block;
+    margin-left: auto; /* Прижимает к правому краю, если nav-links не занимают всю ширину */
+}
+
+.user-info-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    color: #003370; /* Цвет текста кнопки "Иван И." */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user-info-btn:hover {
+    background-color: #e0e0ff; /* Светло-фиолетовый при наведении */
+}
+
+.user-info-btn span {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #003370; /* Цвет для имени пользователя в навбаре */
+}
+
+.user-info-btn .icon { /* Стиль для иконки пользователя */
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    color: #003370; /* Цвет для иконки пользователя */
+}
+
+.user-info-btn .arrow-down { /* Стиль для иконки стрелки вниз */
+    width: 20px;
+    height: 20px;
+    margin-left: -5px; /* Немного сдвинуть стрелку ближе к тексту */
+    color: #003370; /* Цвет для иконки стрелки */
+}
+
+
+.dropdown-content {
+    display: none; /* Изначально скрываем выпадающий список */
+    position: absolute;
+    background-color: #fff;
+    /* УДАЛИТЕ ИЛИ ЗАКОММЕНТИРУЙТЕ ЭТУ СТРОКУ: */
+    /* min-width: 180px; */
+    width: auto; /* ДОБАВЬТЕ ЭТУ СТРОКУ, чтобы ширина подстраивалась под контент */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    right: 0;
+    top: calc(100% + 10px);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #003370; /* Цвет для ссылок выпадающего списка */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* Каждая ссылка на новой строке и занимает всю ширину */
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap; /* ДОБАВЬТЕ ЭТУ СТРОКУ ЗДЕСЬ: текст не будет переноситься внутри ссылки */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #6C63FF; /* Цвет при наведении */
+}
+
+/* Класс, который будет добавляться/удаляться JavaScript-ом для показа/скрытия */
+.dropdown-content.show {
+    display: block;
+}

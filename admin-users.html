@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель - Пользователи</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="admin-header">
+        <nav class="admin-nav">
+            <div class="admin-logo">Админ-панель</div>
+            <div class="admin-nav-right">
+                <span>Привет, Администратор</span>
+                <button class="admin-logout-btn" onclick="location.href='admin-login.html'">Выйти</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-main-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-dashboard.html">Главная</a></li>
+                <li><a href="admin-users.html" class="active">Пользователи</a></li>
+                <li><a href="admin-lessons.html">Уроки</a></li>
+                <li><a href="index.html">На сайт</a></li>
+            </ul>
+        </aside>
+        <section class="admin-content">
+            <h1>Список Пользователей</h1>
+            <button class="btn-primary admin-add-btn" onclick="alert('Открывается форма добавления пользователя')">Добавить нового пользователя</button>
+
+            <div class="admin-table-container">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Имя пользователя</th>
+                            <th>Email</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Иван Иванов</td>
+                            <td>ivan@example.com</td>
+                            <td>
+                                <button class="btn-action edit" onclick="alert('Редактировать пользователя 1')">Редактировать</button>
+                                <button class="btn-action delete" onclick="alert('Удалить пользователя 1')">Удалить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Мария Петрова</td>
+                            <td>maria@example.com</td>
+                            <td>
+                                <button class="btn-action edit" onclick="alert('Редактировать пользователя 2')">Редактировать</button>
+                                <button class="btn-action delete" onclick="alert('Удалить пользователя 2')">Удалить</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
