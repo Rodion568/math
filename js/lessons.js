@@ -966,7 +966,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="lesson-card">
                     <h3>Урок 2: Продвинутые темы</h3>
-                    <button class="start-lesson-btn">Начать урок</button>
+                    <a style="display: inline-block" href="../theory2.html" class="start-lesson-btn">Начать урок</a>
                 </div>
                 <div class="lesson-card">
                     <h3>Урок 3: Практические задания</h3>
