@@ -297,3 +297,215 @@ nav {
 .dropdown-content.show {
     display: block;
 }
+
+
+.your-progress-section {
+    margin-top: 60px; /* Отступ сверху от предыдущих блоков */
+    padding: 0 20px; /* Боковые отступы, если нет общего контейнера */
+    max-width: 1300px; /* Ограничение ширины, если не в контейнере */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.your-progress-section .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003370;
+    text-align: center;
+    margin-bottom: 40px; /* Отступ под заголовком */
+}
+
+/* Изменения начинаются здесь */
+/* Удалили старый .progress-tabs */
+
+/* НОВЫЙ КОНТЕЙНЕР ДЛЯ ВКЛАДОК - Управляет прокруткой */
+.progress-tabs-container {
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+    scrollbar-width: thin; /* Тонкий скроллбар для Firefox */
+    scrollbar-color: #D2D2FF #f1f1f1; /* Цвет скроллбара для Firefox */
+    padding-bottom: 10px; /* Отступ для скроллбара, чтобы он не закрывал кнопки */
+    margin-bottom: 40px; /* Отступ под вкладками */
+    /* Добавьте padding-left/right, если progress-tabs-container не находится в .container с padding */
+    /* Например: */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
+
+/* Стилизация скроллбара для WebKit (Chrome, Safari) */
+.progress-tabs-container::-webkit-scrollbar {
+    height: 8px; /* Высота скроллбара */
+}
+
+.progress-tabs-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона трека скроллбара */
+    border-radius: 10px;
+}
+
+.progress-tabs-container::-webkit-scrollbar-thumb {
+    background-color: #D2D2FF; /* Цвет самого скроллбара */
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; /* Небольшая граница для выделения */
+}
+
+/* НОВЫЙ ВНУТРЕННИЙ ОБЕРТКА - Для Flexbox */
+.progress-tabs-wrapper {
+    display: flex;
+    gap: 15px; /* Отступ между кнопками вкладок */
+    white-space: nowrap; /* Важно: предотвращает перенос кнопок на новую строку */
+}
+
+.tab-button {
+    background-color: #fff;
+    border: 1px solid #D2D2FF;
+    color: #003370;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    flex-shrink: 0; /* Важно: предотвращает сжатие кнопок на маленьких экранах */
+    /* white-space: nowrap; - это можно убрать, так как мы применили его к родителю wrapper */
+}
+
+.tab-button:hover {
+    background-color: #f0f0ff;
+    border-color: #6C63FF;
+}
+
+.tab-button.active {
+    background-color: #D2D2FF;
+    border-color: #D2D2FF;
+    color: #003370;
+    font-weight: 600;
+}
+/* Изменения заканчиваются здесь */
+
+
+/* Стили для деталей прогресса */
+.progress-details-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px; /* Ограничиваем ширину контейнера прогресса */
+    margin: 0 auto; /* Центрируем его */
+}
+
+.progress-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee; /* Разделитель между строками */
+}
+
+.progress-row:first-child {
+    border-bottom: 1px dashed #ccc; /* Пунктирная линия для заголовков */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #003370;
+}
+
+.progress-row:last-child {
+    border-bottom: none; /* Убираем нижнюю границу у последней строки */
+}
+
+.progress-label {
+    font-size: 16px;
+    color: #555;
+    flex-grow: 1; /* Позволяет метке занять доступное пространство */
+}
+
+.progress-label.right-aligned {
+    text-align: right;
+}
+
+.progress-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #003370;
+    min-width: 120px; /* Минимальная ширина для выравнивания */
+}
+
+.progress-dots {
+    display: flex;
+    gap: 8px; /* Отступ между точками */
+}
+
+.dot {
+    width: 18px; /* Размер точки */
+    height: 18px;
+    border-radius: 50%; /* Делает круглой */
+    background-color: #E0E0FF; /* Цвет пустой точки (светло-фиолетовый) */
+    border: 1px solid #D2D2FF; /* Граница точки */
+}
+
+.dot.filled {
+    background-color: #6C63FF; /* Цвет заполненной точки (фиолетовый) */
+    border-color: #6C63FF;
+}
+
+/* Адаптивность для блока "Твои успехи" */
+@media (max-width: 768px) {
+    .your-progress-section {
+        margin-top: 40px;
+    }
+
+    .your-progress-section .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    /* Изменения в адаптивности для .progress-tabs */
+    /* Удалили старый .progress-tabs стили для адаптивности */
+    .progress-tabs-container {
+        padding-left: 15px; /* Выравнивание с основным контентом на мобильных */
+        padding-right: 15px;
+    }
+
+    .progress-tabs-wrapper {
+        gap: 10px; /* Меньший отступ между вкладками на мобильных */
+    }
+
+    .tab-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    /* Конец изменений в адаптивности для .progress-tabs */
+
+    .progress-details-container {
+        padding: 20px;
+    }
+
+    .progress-row {
+        flex-direction: column; /* В столбец на маленьких экранах */
+        align-items: flex-start;
+        padding: 10px 0;
+        gap: 5px; /* Отступ между элементами в столбце */
+    }
+
+    .progress-label.right-aligned {
+        text-align: left; /* Выравнивание влево */
+    }
+
+    .progress-dots {
+        justify-content: flex-start; /* Точки по левому краю */
+        width: 100%; /* Занимают всю ширину */
+        overflow-x: auto; /* Скролл для точек, если их много */
+        padding-bottom: 5px;
+    }
+
+    .dot {
+        min-width: 15px; /* Минимальный размер, чтобы не сжимались */
+        min-height: 15px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .progress-item {
+        min-width: auto; /* Убираем минимальную ширину */
+    }
+}
