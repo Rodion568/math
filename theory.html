@@ -20,6 +20,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="checking.html">Проверка знаний</a></li>
                 <li><a href="lessons2.html">Квесты</a></li>
                 <li><a href="#">Инструменты</a></li>
                 <li><a href="#">Сообщества</a></li>
@@ -37,7 +38,7 @@
 
     <main class="theory">
         <a class="start-lesson-button" href="lessons.html">Назад</a>
-        <h1 class="theory-title">Теория по профильной математике</h1>
+        <h1 class="theory-title" id="courseTitle">Теория по арифметике урок 1</h1>
 
         <div class="section">
 
@@ -228,6 +229,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Получаем параметры из URL
+        const params = new URLSearchParams(window.location.search);
+        const title = document.getElementById('courseTitle');
+
+        // Устанавливаем заголовок
+        if (params.has('course')) {
+            title.textContent = `Теория по ${params.get('course')}`;
+
+            // Добавляем номер урока если есть
+            if (params.has('lesson')) {
+                title.textContent += ` (Урок ${params.get('lesson')})`;
+            }
+        }
+    </script>
+
 </body>
 
 </html>

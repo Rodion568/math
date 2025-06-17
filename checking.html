@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img\logo.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="checking.html">Проверка знаний</a></li>
+                <li><a href="lessons2.html">Квесты</a></li>
+                <li><a href="#">Инструменты</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Прогресс</a></li>
+            </ul>
+
+            <a href="#regis" class="login-btn">Войти</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="title">Проверка знаний</h1>
+            <div class="math-dashboard">
+                <div class="math-learning-app">
+                    <!-- Выпадающий список "Выберите предмет" -->
+                    <div class="dropdown subject-dropdown">
+                        <button class="dropdown-btn">Выберите предмет</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item" data-value="all">Все предметы</div>
+                            <div class="dropdown-item" data-value="Арифметика">Арифметика</div>
+                            <div class="dropdown-item" data-value="Математика">Математика</div>
+                            <div class="dropdown-item" data-value="Цифровая математика">Цифровая математика</div>
+                        </div>
+                    </div>
+
+                    <!-- Выпадающий список "Уровень знаний" -->
+                    <div class="dropdown level-dropdown">
+                        <button class="dropdown-btn">Уровень знаний</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item" data-value="all">Все уровни</div>
+                            <div class="dropdown-item" data-value="Начальный">Начальный</div>
+                            <div class="dropdown-item" data-value="Средний">Средний</div>
+                            <div class="dropdown-item" data-value="Продвинутый">Продвинутый</div>
+                        </div>
+                    </div>
+
+                    <!-- Выпадающий список "Формат обучения" -->
+                    <!-- <div class="dropdown format-dropdown">
+                        <button class="dropdown-btn">Формат обучения</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item" data-value="all">Все форматы</div>
+                            <div class="dropdown-item" data-value="Теория">Теория</div>
+                            <div class="dropdown-item razrab" data-value="Практика">Практика</div>
+                            <div class="dropdown-item razrab" data-value="Симуляции">Симуляции</div>
+                        </div>
+                    </div> -->
+
+                </div>
+                <div class="math-subjects-grid">
+                    <div class="no-results-message" style="display: none;">
+                        <div class="empty-state">
+                            <h3>Ничего не найдено</h3>
+                            <p>Попробуйте изменить параметры фильтрации</p>
+                        </div>
+                    </div>
+                    <div class="courses">
+
+                        <div class="course-card">
+                            <h2>Арифметика</h2>
+                            <p class="course-text">Уровень: Начальный</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+                        <div class="course-card">
+                            <h2>Математика</h2>
+                            <p class="course-text">Уровень: Начальный</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+                        <div class="course-card">
+                            <h2>Цифровая математика</h2>
+                            <p class="course-text">Уровень: Начальный</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+
+                        <div class="course-card">
+                            <h2>Арифметика</h2>
+                            <p class="course-text">Уровень: Средний</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+                        <div class="course-card">
+                            <h2>Математика</h2>
+                            <p class="course-text">Уровень: Средний</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+                        <div class="course-card">
+                            <h2>Цифровая математика</h2>
+                            <p class="course-text">Уровень: Средний</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+                        <div class="course-card">
+                            <h2>Арифметика</h2>
+                            <p class="course-text">Уровень: Продвинутый</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+                        <div class="course-card">
+                            <h2>Математика</h2>
+                            <p class="course-text">Уровень: Продвинутый</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+
+                        <div class="course-card">
+                            <h2>Цифровая математика</h2>
+                            <p class="course-text">Уровень: Продвинутый</p>
+                            <button class="start-lesson-button">Начать тест</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-section logo-section">
+                <img src="img/Group 44.png" alt="Language2Go Logo">
+                <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Обучение</h3>
+                <ul>
+                    <li><a href="#">Все языки</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Детям и подросткам</a></li>
+                    <li><a href="#">Мини-курсы</a></li>
+                    <li><a href="#">Тренажеры</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3 class="footer-heading">Контакты</h3>
+                <p>+7 (8362) 00-00-00</p>
+                <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
+                <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
+                <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/checking.js"></script>
+
+</body>
+
+</html>
