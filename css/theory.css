@@ -1,0 +1,271 @@
+/* theory.css */
+
+/* Общие стили для страницы теории */
+.theory {
+    padding: 20px;
+    max-width: 900px; /* Ограничиваем ширину основного контента */
+    margin: 40px auto; /* Центрируем и добавляем отступы */
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.8; /* Улучшаем читаемость текста */
+    color: #003370;
+}
+
+.theory-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #003370;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #D2D2FF; /* Подчеркивание заголовка */
+}
+
+.theory-subtitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: #003370;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.theory-podtitle { /* Для h3 заголовков внутри разделов */
+    font-size: 22px;
+    font-weight: 600;
+    color: #003370;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Стили для разделов (section) */
+.section {
+    margin-bottom: 50px;
+    padding-top: 20px;
+    border-top: 1px dashed #e0e0e0; /* Пунктирная линия между разделами */
+}
+
+.section:first-of-type {
+    border-top: none; /* Убираем верхнюю границу для первого раздела */
+}
+
+
+/* Стили для параграфов */
+.theory p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Стили для списков */
+.theory ul {
+    list-style: disc; /* Маркеры-точки */
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.theory ul li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.theory ol {
+    list-style: decimal; /* Нумерованный список */
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.theory ol li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+/* Стили для кода/терминов */
+.theory code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    background-color: #f0f0ff; /* Светлый фон для кода */
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: #6C63FF; /* Цвет текста для кода */
+    font-weight: bold;
+}
+
+/* Стили для видео */
+.theory video {
+    display: block; /* Делаем видео блочным элементом */
+    margin: 30px auto; /* Центрируем видео и добавляем отступы */
+    max-width: 100%; /* Гарантируем, что видео не выйдет за пределы контейнера */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для блоков с формулами */
+.formula {
+    background-color: #f8f8ff; /* Очень светлый фиолетовый фон */
+    border: 1px solid #D2D2FF; /* Рамка в тон */
+    border-left: 6px solid #6C63FF; /* Яркая левая граница */
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+    font-family: 'Times New Roman', serif; /* Или другой шрифт для формул */
+    font-size: 20px;
+    text-align: center;
+    overflow-x: auto; /* Для горизонтальной прокрутки, если формула очень длинная */
+}
+
+/* Дополнительный стиль для формул, если используется formula-box */
+.formula-box {
+    background-color: #f8f8ff;
+    border: 1px solid #D2D2FF;
+    border-left: 6px solid #6C63FF;
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+/* Стили KaTeX - важно для формул, обернутых в \( \) */
+.katex-display { /* Стили для блочных формул (с $$) */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.katex { /* Стили для строчных формул (с $) */
+    font-family: 'KaTeX_Main', 'Times New Roman', serif;
+}
+
+
+/* Стили для важных блоков (important) */
+.important {
+    background-color: #e0f2f7; /* Светло-голубой фон */
+    border-left: 6px solid #2196F3; /* Синяя левая граница */
+    padding: 18px 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #0d47a1; /* Темно-синий текст */
+}
+
+.important strong {
+    color: #1a237e; /* Более темный синий для выделенного текста */
+}
+
+/* Стили для примеров (example) */
+.example {
+    background-color: #f0fff0; /* Очень светло-зеленый фон */
+    border: 1px solid #c8e6c9; /* Светло-зеленая рамка */
+    border-left: 6px solid #4CAF50; /* Зеленая левая граница */
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #2e7d32; /* Темно-зеленый текст */
+}
+
+.example strong {
+    color: #1b5e20; /* Более темный зеленый для выделенного текста */
+}
+
+/* Стили для изображений в примерах */
+.example img {
+    display: block; /* Центрируем изображение */
+    margin: 15px auto;
+    max-width: 100%; /* Чтобы изображение не выходило за пределы примера */
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+
+
+.start-lesson-button:hover {
+    background-color: #c1c1ff; /* Изменение цвета при наведении */
+    transform: translateY(-2px); /* Небольшой эффект поднятия */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .theory {
+        margin: 20px auto;
+        padding: 15px;
+        box-shadow: none; /* Убираем тень на мобильных */
+    }
+
+    .theory-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .theory-subtitle {
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .theory-podtitle {
+        font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .theory p,
+    .theory ul li,
+    .theory ol li,
+    .important,
+    .example {
+        font-size: 15px;
+    }
+
+    .formula {
+        font-size: 18px;
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    .start-lesson-button {
+        padding: 12px 25px;
+        font-size: 16px;
+        margin: 30px auto 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .theory-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .theory-subtitle {
+        font-size: 20px;
+    }
+
+    .theory-podtitle {
+        font-size: 16px;
+    }
+
+    .theory p,
+    .theory ul li,
+    .theory ol li {
+        font-size: 14px;
+    }
+
+    .formula {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .important,
+    .example {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .start-lesson-button {
+        width: 90%; /* Ширина на маленьких экранах */
+        font-size: 15px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профильная математика - Теория</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theory.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img\logo.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="lessons2.html">Квесты</a></li>
+                <li><a href="#">Инструменты</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Прогресс</a></li>
+            </ul>
+
+            <a href="#regis" class="login-btn">Войти</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="theory">
+        <a class="start-lesson-button" href="lessons.html">Назад</a>
+        <h1 class="theory-title">Действия первой и второй ступени. Порядок действий.</h1>
+
+        <div class="section">
+            <video controls width="800" height="450">
+                <source src="video/1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+
+            <h2 class="theory-subtitle">Арифметические действия делятся на действия первой и второй ступени.</h2>
+
+            <p><strong>Действия первой ступени</strong> — это <strong>сложение</strong> и <strong>вычитание</strong>:</p>
+            <ul>
+                <li><code>5 + 4</code> — сложение,</li>
+                <li><code>7 - 3</code> — вычитание.</li>
+            </ul>
+
+            <p><strong>Действия второй ступени</strong> — это <strong>умножение</strong> и <strong>деление</strong>:</p>
+            <ul>
+                <li><code>5 · 4</code> — умножение,</li>
+                <li><code>12 : 3</code> — деление.</li>
+            </ul>
+
+            <h2 class="theory-subtitle">Порядок действий</h2>
+            <p>Если выражение содержит действия только одной ступени и в нём нет скобок, то действия выполняются в порядке их следования слева направо.</p>
+
+            <div class="example">
+                <strong>Пример 1.</strong> Вычислить значение выражения:<br>
+                <code>15 + 17 - 20 + 8 - 12.</code><br>
+                <strong>Решение:</strong> Данное выражение содержит действия только одной ступени — первой (сложение и вычитание). Надо определить порядок действий и выполнить их.<br>
+                <img src="img/arif_prim1.png" alt="Порядок действий в примере 1" style="max-width: 100%; height: auto;">
+                <ol>
+                    <li>15 + 17 = 32;</li>
+                    <li>32 - 20 = 12;</li>
+                    <li>12 + 8 = 20;</li>
+                    <li>20 - 12 = 8.</li>
+                </ol>
+                <strong>Ответ:</strong> 8.
+            </div>
+
+            <div class="example">
+                <strong>Пример 2.</strong> Вычислить значение выражения:<br>
+                <code>60 : 15 · 7 : 2 · 3.</code><br>
+                <strong>Решение:</strong> Данное выражение содержит действия только одной ступени — второй (умножение и деление). Надо определить порядок действий и выполнить их.<br>
+                <img src="img/arif_prim2.png" alt="Порядок действий в примере 2" style="max-width: 100%; height: auto;">
+                <ol>
+                    <li>60 : 15 = 4;</li>
+                    <li>4 · 7 = 28;</li>
+                    <li>28 : 2 = 14;</li>
+                    <li>14 · 3 = 42.</li>
+                </ol>
+                <strong>Ответ:</strong> 42.
+            </div>
+
+            <p>Если выражение содержит действия обеих ступеней, то первыми выполняются действия второй ступени, в порядке их следования (слева направо), а затем действия первой ступени.</p>
+
+            <div class="example">
+                <strong>Пример 3.</strong> Вычислить значение выражения:<br>
+                <code>24 : 3 + 5 · 2 - 17.</code><br>
+                <strong>Решение:</strong> Данное выражение содержит четыре действия: два первой ступени и два второй. Определим порядок их выполнения: согласно правилу первым действием будет деление, вторым — умножение, третьим — сложение, а четвёртым — вычитание.<br>
+                <img src="img/arif_prim3.png" alt="Порядок действий в примере 3" style="max-width: 100%; height: auto;">
+                <p>Теперь приступим к вычислению:</p>
+                <ol>
+                    <li>24 : 3 = 8;</li>
+                    <li>5 · 2 = 10;</li>
+                    <li>8 + 10 = 18;</li>
+                    <li>18 - 17 = 1.</li>
+                </ol>
+                <strong>Ответ:</strong> 1.
+            </div>
+
+        </div>
+
+        <a class="start-lesson-button" href="test.html">Пройти тест</a>
+    </main>
+
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-section logo-section">
+                <img src="img/Group 44.png" alt="Language2Go Logo">
+                <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
+                </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Обучение</h3>
+                <ul>
+                    <li><a href="#">Все языки</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Детям и подросткам</a></li>
+                    <li><a href="#">Мини-курсы</a></li>
+                    <li><a href="#">Тренажеры</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3 class="footer-heading">Контакты</h3>
+                <p>+7 (8362) 00-00-00</p>
+                <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
+                <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
+                <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
