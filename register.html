@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВсеМат - Главная</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="img\logo.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="checking.html">Проверка знаний</a></li>
+                <li><a href="#">Квесты</a></li>
+                <li><a href="#">Инструменты</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Прогресс</a></li>
+            </ul>
+
+
+
+
+            <a href="profil.html" class="login-btn">Войти</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <!-- Форма входа -->
+            <div id="login-form" class="auth-form active-form">
+                <h2>Вход</h2>
+                <form id="login">
+                    <div class="form-group">
+                        <label for="login-email">Почта</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Пароль</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                   <a style="display: inline-block;" href="profil.html" class="auth-btn">Войти</a>
+                </form>
+                <div class="form-switch">
+                    Нет аккаунта? <a onclick="showRegisterForm()">Зарегистрироваться</a>
+                </div>
+            </div>
+
+            <!-- Форма регистрации -->
+            <div id="register-form" class="auth-form hidden-form">
+                <h2>Регистрация</h2>
+                <form id="register">
+                    <div class="form-group">
+                        <label for="reg-username">Логин</label>
+                        <input type="text" id="reg-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Почта</label>
+                        <input type="email" id="reg-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Пароль</label>
+                        <input type="password" id="reg-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-confirm-password">Подтвердите пароль</label>
+                        <input type="password" id="reg-confirm-password" required>
+                    </div>
+                    <a style="display: inline-block;" href="profil.html" class="auth-btn">Зарегистрироваться</a>
+                </form>
+                <div class="form-switch">
+                    Уже есть аккаунт? <a onclick="showLoginForm()">Войти</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-section logo-section">
+                <img src="img/Group 44.png" alt="Language2Go Logo">
+                <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Обучение</h3>
+                <ul>
+                    <li><a href="#">Все языки</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Детям и подросткам</a></li>
+                    <li><a href="#">Мини-курсы</a></li>
+                    <li><a href="#">Тренажеры</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3 class="footer-heading">Контакты</h3>
+                <p>+7 (8362) 00-00-00</p>
+                <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
+                <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
+                <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .auth-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .auth-form {
+            flex: 1;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .auth-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .auth-btn {
+            text-align: center;
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .auth-btn:hover {
+            background-color: #236b9b;
+        }
+
+        .form-switch {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .form-switch a {
+            color: #3498db;
+            cursor: pointer;
+        }
+
+        .active-form {
+            display: block;
+        }
+
+        .hidden-form {
+            display: none;
+        }
+    </style>
+
+    <script src="js/burger.js"></script>
+     <script>
+        function showRegisterForm() {
+            document.getElementById('login-form').classList.remove('active-form');
+            document.getElementById('login-form').classList.add('hidden-form');
+            document.getElementById('register-form').classList.remove('hidden-form');
+            document.getElementById('register-form').classList.add('active-form');
+        }
+
+        function showLoginForm() {
+            document.getElementById('register-form').classList.remove('active-form');
+            document.getElementById('register-form').classList.add('hidden-form');
+            document.getElementById('login-form').classList.remove('hidden-form');
+            document.getElementById('login-form').classList.add('active-form');
+        }
+
+        // Обработка форм
+        // document.getElementById('login').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     const email = document.getElementById('login-email').value;
+        //     const password = document.getElementById('login-password').value;
+        //     // Здесь должна быть логика входа
+        //     console.log('Вход:', email, password);
+        //     alert('Вход выполнен!');
+        // });
+
+        // document.getElementById('register').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     const username = document.getElementById('reg-username').value;
+        //     const email = document.getElementById('reg-email').value;
+        //     const password = document.getElementById('reg-password').value;
+        //     const confirmPassword = document.getElementById('reg-confirm-password').value;
+            
+        //     if (password !== confirmPassword) {
+        //         alert('Пароли не совпадают!');
+        //         return;
+        //     }
+            
+        //     // Здесь должна быть логика регистрации
+        //     console.log('Регистрация:', username, email, password);
+        //     alert('Регистрация успешна!');
+        //     showLoginForm();
+        // });
+    </script>
+</body>
+
+
+</html>

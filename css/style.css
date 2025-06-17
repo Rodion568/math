@@ -945,7 +945,7 @@ ul li a:hover {
 }
 
 .start-lesson-btn {
-    background: #27ae60;
+    background: #3498db;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -956,7 +956,7 @@ ul li a:hover {
 }
 
 .start-lesson-btn:hover {
-    background: #219653;
+    background: #236b9b;
 }
 
 .back-button {
@@ -977,6 +977,11 @@ ul li a:hover {
 /* =====//////====== */
 
 /* =======THEORY======== */
+.title {
+    color: #1557b0;
+    margin-bottom: 30px;
+}
+
 /* Основные стили */
 .theory {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
