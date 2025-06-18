@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: flex-end;
     min-height: 100vh;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .container {
@@ -28,7 +28,8 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #1a73e8; /* Blue-purple color */
+    color: #1a73e8;
+    /* Blue-purple color */
     font-weight: 600;
     font-size: 18px;
 }
@@ -38,7 +39,8 @@ body {
     color: #6C63FF;
     width: 24px;
     height: 24px;
-    stroke-width: 2; /* Make the arrow thicker */
+    stroke-width: 2;
+    /* Make the arrow thicker */
 }
 
 /* Profile Details Box */
@@ -68,7 +70,8 @@ body {
 .profile-details p span {
     font-weight: 600;
     margin-left: 5px;
-    font-family: 'Inter', sans-serif; /* For login/password values */
+    font-family: 'Inter', sans-serif;
+    /* For login/password values */
 }
 
 .password-row {
@@ -82,7 +85,8 @@ body {
     cursor: pointer;
     padding: 0;
     margin-left: 10px;
-    display: flex; /* To center the icon */
+    display: flex;
+    /* To center the icon */
     align-items: center;
 }
 
@@ -122,7 +126,8 @@ body {
 }
 
 .card-icon img {
-    width: 90px; /* Adjust size of icon images */
+    width: 90px;
+    /* Adjust size of icon images */
     height: 90px;
 }
 
@@ -175,7 +180,8 @@ body {
     }
 
     .courses-grid {
-        grid-template-columns: 1fr; /* Stack cards on small screens */
+        grid-template-columns: 1fr;
+        /* Stack cards on small screens */
         gap: 20px;
     }
 
@@ -208,20 +214,25 @@ nav {
     background-color: #EEEEFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .nav-links {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    flex-grow: 1; /* Позволяет ссылкам занимать доступное пространство */
-    justify-content: center; /* <--- ИЗМЕНИТЕ ЭТУ СТРОКУ, чтобы центрировать элементы меню */
+    flex-grow: 1;
+    /* Позволяет ссылкам занимать доступное пространство */
+    justify-content: center;
+    /* <--- ИЗМЕНИТЕ ЭТУ СТРОКУ, чтобы центрировать элементы меню */
 }
 
 
-    .user-dropdown {
-    position: relative; /* Относительное позиционирование для выпадающего списка */
+.user-dropdown {
+    position: relative;
+    /* Относительное позиционирование для выпадающего списка */
     display: inline-block;
-    margin-left: auto; /* Прижимает к правому краю, если nav-links не занимают всю ширину */
+    margin-left: auto;
+    /* Прижимает к правому краю, если nav-links не занимают всю ширину */
 }
 
 .user-info-btn {
@@ -233,44 +244,54 @@ nav {
     padding: 8px 12px;
     border-radius: 5px;
     transition: background-color 0.2s ease;
-    color: #003370; /* Цвет текста кнопки "Иван И." */
+    color: #003370;
+    /* Цвет текста кнопки "Иван И." */
     font-size: 16px;
     font-weight: 500;
 }
 
 .user-info-btn:hover {
-    background-color: #e0e0ff; /* Светло-фиолетовый при наведении */
+    background-color: #e0e0ff;
+    /* Светло-фиолетовый при наведении */
 }
 
 .user-info-btn span {
     margin-right: 10px;
     font-weight: 500;
-    color: #003370; /* Цвет для имени пользователя в навбаре */
+    color: #003370;
+    /* Цвет для имени пользователя в навбаре */
 }
 
-.user-info-btn .icon { /* Стиль для иконки пользователя */
+.user-info-btn .icon {
+    /* Стиль для иконки пользователя */
     width: 30px;
     height: 30px;
     margin-right: 8px;
-    color: #003370; /* Цвет для иконки пользователя */
+    color: #003370;
+    /* Цвет для иконки пользователя */
 }
 
-.user-info-btn .arrow-down { /* Стиль для иконки стрелки вниз */
+.user-info-btn .arrow-down {
+    /* Стиль для иконки стрелки вниз */
     width: 20px;
     height: 20px;
-    margin-left: -5px; /* Немного сдвинуть стрелку ближе к тексту */
-    color: #003370; /* Цвет для иконки стрелки */
+    margin-left: -5px;
+    /* Немного сдвинуть стрелку ближе к тексту */
+    color: #003370;
+    /* Цвет для иконки стрелки */
 }
 
 
 .dropdown-content {
-    display: none; /* Изначально скрываем выпадающий список */
+    display: none;
+    /* Изначально скрываем выпадающий список */
     position: absolute;
     background-color: #fff;
     /* УДАЛИТЕ ИЛИ ЗАКОММЕНТИРУЙТЕ ЭТУ СТРОКУ: */
     /* min-width: 180px; */
-    width: auto; /* ДОБАВЬТЕ ЭТУ СТРОКУ, чтобы ширина подстраивалась под контент */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: auto;
+    /* ДОБАВЬТЕ ЭТУ СТРОКУ, чтобы ширина подстраивалась под контент */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
     right: 0;
     top: calc(100% + 10px);
@@ -279,18 +300,22 @@ nav {
 }
 
 .dropdown-content a {
-    color: #003370; /* Цвет для ссылок выпадающего списка */
+    color: #003370;
+    /* Цвет для ссылок выпадающего списка */
     padding: 12px 16px;
     text-decoration: none;
-    display: block; /* Каждая ссылка на новой строке и занимает всю ширину */
+    display: block;
+    /* Каждая ссылка на новой строке и занимает всю ширину */
     font-size: 16px;
     transition: background-color 0.2s ease;
-    white-space: nowrap; /* ДОБАВЬТЕ ЭТУ СТРОКУ ЗДЕСЬ: текст не будет переноситься внутри ссылки */
+    white-space: nowrap;
+    /* ДОБАВЬТЕ ЭТУ СТРОКУ ЗДЕСЬ: текст не будет переноситься внутри ссылки */
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
-    color: #6C63FF; /* Цвет при наведении */
+    color: #6C63FF;
+    /* Цвет при наведении */
 }
 
 /* Класс, который будет добавляться/удаляться JavaScript-ом для показа/скрытия */
@@ -300,9 +325,12 @@ nav {
 
 
 .your-progress-section {
-    margin-top: 60px; /* Отступ сверху от предыдущих блоков */
-    padding: 0 20px; /* Боковые отступы, если нет общего контейнера */
-    max-width: 1300px; /* Ограничение ширины, если не в контейнере */
+    margin-top: 60px;
+    /* Отступ сверху от предыдущих блоков */
+    padding: 0 20px;
+    /* Боковые отступы, если нет общего контейнера */
+    max-width: 1300px;
+    /* Ограничение ширины, если не в контейнере */
     margin-left: auto;
     margin-right: auto;
 }
@@ -312,7 +340,8 @@ nav {
     font-weight: 700;
     color: #003370;
     text-align: center;
-    margin-bottom: 40px; /* Отступ под заголовком */
+    margin-bottom: 40px;
+    /* Отступ под заголовком */
 }
 
 /* Изменения начинаются здесь */
@@ -320,12 +349,18 @@ nav {
 
 /* НОВЫЙ КОНТЕЙНЕР ДЛЯ ВКЛАДОК - Управляет прокруткой */
 .progress-tabs-container {
-    overflow-x: auto; /* Включаем горизонтальную прокрутку */
-    -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
-    scrollbar-width: thin; /* Тонкий скроллбар для Firefox */
-    scrollbar-color: #D2D2FF #f1f1f1; /* Цвет скроллбара для Firefox */
-    padding-bottom: 10px; /* Отступ для скроллбара, чтобы он не закрывал кнопки */
-    margin-bottom: 40px; /* Отступ под вкладками */
+    overflow-x: auto;
+    /* Включаем горизонтальную прокрутку */
+    -webkit-overflow-scrolling: touch;
+    /* Для плавной прокрутки на iOS */
+    scrollbar-width: thin;
+    /* Тонкий скроллбар для Firefox */
+    scrollbar-color: #D2D2FF #f1f1f1;
+    /* Цвет скроллбара для Firefox */
+    padding-bottom: 10px;
+    /* Отступ для скроллбара, чтобы он не закрывал кнопки */
+    margin-bottom: 40px;
+    /* Отступ под вкладками */
     /* Добавьте padding-left/right, если progress-tabs-container не находится в .container с padding */
     /* Например: */
     /* padding-left: 20px; */
@@ -334,25 +369,31 @@ nav {
 
 /* Стилизация скроллбара для WebKit (Chrome, Safari) */
 .progress-tabs-container::-webkit-scrollbar {
-    height: 8px; /* Высота скроллбара */
+    height: 8px;
+    /* Высота скроллбара */
 }
 
 .progress-tabs-container::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Цвет фона трека скроллбара */
+    background: #f1f1f1;
+    /* Цвет фона трека скроллбара */
     border-radius: 10px;
 }
 
 .progress-tabs-container::-webkit-scrollbar-thumb {
-    background-color: #D2D2FF; /* Цвет самого скроллбара */
+    background-color: #D2D2FF;
+    /* Цвет самого скроллбара */
     border-radius: 10px;
-    border: 2px solid #f1f1f1; /* Небольшая граница для выделения */
+    border: 2px solid #f1f1f1;
+    /* Небольшая граница для выделения */
 }
 
 /* НОВЫЙ ВНУТРЕННИЙ ОБЕРТКА - Для Flexbox */
 .progress-tabs-wrapper {
     display: flex;
-    gap: 15px; /* Отступ между кнопками вкладок */
-    white-space: nowrap; /* Важно: предотвращает перенос кнопок на новую строку */
+    gap: 15px;
+    /* Отступ между кнопками вкладок */
+    white-space: nowrap;
+    /* Важно: предотвращает перенос кнопок на новую строку */
 }
 
 .tab-button {
@@ -365,7 +406,8 @@ nav {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-    flex-shrink: 0; /* Важно: предотвращает сжатие кнопок на маленьких экранах */
+    flex-shrink: 0;
+    /* Важно: предотвращает сжатие кнопок на маленьких экранах */
     /* white-space: nowrap; - это можно убрать, так как мы применили его к родителю wrapper */
 }
 
@@ -380,6 +422,7 @@ nav {
     color: #003370;
     font-weight: 600;
 }
+
 /* Изменения заканчиваются здесь */
 
 
@@ -389,20 +432,24 @@ nav {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    max-width: 800px; /* Ограничиваем ширину контейнера прогресса */
-    margin: 0 auto; /* Центрируем его */
+    max-width: 800px;
+    /* Ограничиваем ширину контейнера прогресса */
+    margin: 0 auto;
+    /* Центрируем его */
 }
 
 .progress-row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 12px 0;
-    border-bottom: 1px solid #eee; /* Разделитель между строками */
+    border-bottom: 1px solid #eee;
+    /* Разделитель между строками */
 }
 
 .progress-row:first-child {
-    border-bottom: 1px dashed #ccc; /* Пунктирная линия для заголовков */
+    border-bottom: 1px dashed #ccc;
+    /* Пунктирная линия для заголовков */
     margin-bottom: 10px;
     padding-bottom: 10px;
     font-weight: 600;
@@ -410,53 +457,68 @@ nav {
 }
 
 .progress-row:last-child {
-    border-bottom: none; /* Убираем нижнюю границу у последней строки */
+    border-bottom: none;
+    /* Убираем нижнюю границу у последней строки */
 }
 
 .progress-label {
     font-size: 16px;
     color: #555;
-    flex-grow: 1; /* Позволяет метке занять доступное пространство */
+    /* border-right: 3px solid #ccc; */
+    /* flex-grow: 1; */
+    /* Позволяет метке занять доступное пространство */
 }
 
 .progress-label.right-aligned {
-    text-align: right;
+    /* text-align: right; */
+    margin-left: 10px;
 }
 
 .progress-item {
+    width: 150px;
     font-size: 16px;
     font-weight: 500;
     color: #003370;
-    min-width: 120px; /* Минимальная ширина для выравнивания */
+    min-width: 120px;
+    /* Минимальная ширина для выравнивания */
 }
 
 .progress-dots {
     display: flex;
-    gap: 8px; /* Отступ между точками */
+    gap: 8px;
+    /* Отступ между точками */
 }
 
 .dot {
-    width: 18px; /* Размер точки */
+    width: 18px;
+    /* Размер точки */
     height: 18px;
-    border-radius: 50%; /* Делает круглой */
-    background-color: #E0E0FF; /* Цвет пустой точки (светло-фиолетовый) */
-    border: 1px solid #D2D2FF; /* Граница точки */
+    border-radius: 50%;
+    /* Делает круглой */
+    background-color: #E0E0FF;
+    /* Цвет пустой точки (светло-фиолетовый) */
+    border: 1px solid #D2D2FF;
+    /* Граница точки */
 }
 
 /* НОВЫЕ КЛАССЫ ДЛЯ ЦВЕТОВ КРУЖОЧКОВ */
 .dot.filled-green {
-    background-color: #4CAF50; /* Зеленый цвет для "отлично" */
+    background-color: #4CAF50;
+    /* Зеленый цвет для "отлично" */
     border-color: #4CAF50;
 }
 
 .dot.filled-red {
-    background-color: #F44336; /* Красный цвет для "плохо" */
+    background-color: #F44336;
+    /* Красный цвет для "плохо" */
     border-color: #F44336;
 }
 
 .dot.empty {
-    background-color: transparent; /* Прозрачный цвет для "не проходился" */
-    border: 1px dashed #ccc; /* Пунктирная граница для визуального отличия */
+    background-color: transparent;
+    /* Прозрачный цвет для "не проходился" */
+    border: 1px dashed #ccc;
+    /* Пунктирная граница для визуального отличия */
 }
 
 /* Удаляем старый .dot.filled, чтобы он не конфликтовал */
@@ -464,7 +526,8 @@ nav {
     /* Эти стили больше не нужны, так как будут использоваться specific .filled-green/.filled-red */
     /* background-color: #6C63FF; */
     /* border-color: #6C63FF; */
-    display: none; /* Временно скрываю, чтобы не было конфликтов с новыми классами */
+    display: none;
+    /* Временно скрываю, чтобы не было конфликтов с новыми классами */
 }
 
 
@@ -482,18 +545,21 @@ nav {
     /* Изменения в адаптивности для .progress-tabs */
     /* Удалили старый .progress-tabs стили для адаптивности */
     .progress-tabs-container {
-        padding-left: 15px; /* Выравнивание с основным контентом на мобильных */
+        padding-left: 15px;
+        /* Выравнивание с основным контентом на мобильных */
         padding-right: 15px;
     }
 
     .progress-tabs-wrapper {
-        gap: 10px; /* Меньший отступ между вкладками на мобильных */
+        gap: 10px;
+        /* Меньший отступ между вкладками на мобильных */
     }
 
     .tab-button {
         padding: 10px 20px;
         font-size: 14px;
     }
+
     /* Конец изменений в адаптивности для .progress-tabs */
 
     .progress-details-container {
@@ -501,31 +567,39 @@ nav {
     }
 
     .progress-row {
-        flex-direction: column; /* В столбец на маленьких экранах */
+        flex-direction: column;
+        /* В столбец на маленьких экранах */
         align-items: flex-start;
         padding: 10px 0;
-        gap: 5px; /* Отступ между элементами в столбце */
+        gap: 5px;
+        /* Отступ между элементами в столбце */
     }
 
     .progress-label.right-aligned {
-        text-align: left; /* Выравнивание влево */
+        text-align: left;
+        /* Выравнивание влево */
     }
 
     .progress-dots {
-        justify-content: flex-start; /* Точки по левому краю */
-        width: 100%; /* Занимают всю ширину */
-        overflow-x: auto; /* Скролл для точек, если их много */
+        justify-content: flex-start;
+        /* Точки по левому краю */
+        width: 100%;
+        /* Занимают всю ширину */
+        overflow-x: auto;
+        /* Скролл для точек, если их много */
         padding-bottom: 5px;
     }
 
     .dot {
-        min-width: 15px; /* Минимальный размер, чтобы не сжимались */
+        min-width: 15px;
+        /* Минимальный размер, чтобы не сжимались */
         min-height: 15px;
         width: 15px;
         height: 15px;
     }
 
     .progress-item {
-        min-width: auto; /* Убираем минимальную ширину */
+        min-width: auto;
+        /* Убираем минимальную ширину */
     }
 }
