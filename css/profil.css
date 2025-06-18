@@ -443,10 +443,30 @@ nav {
     border: 1px solid #D2D2FF; /* Граница точки */
 }
 
-.dot.filled {
-    background-color: #6C63FF; /* Цвет заполненной точки (фиолетовый) */
-    border-color: #6C63FF;
+/* НОВЫЕ КЛАССЫ ДЛЯ ЦВЕТОВ КРУЖОЧКОВ */
+.dot.filled-green {
+    background-color: #4CAF50; /* Зеленый цвет для "отлично" */
+    border-color: #4CAF50;
 }
+
+.dot.filled-red {
+    background-color: #F44336; /* Красный цвет для "плохо" */
+    border-color: #F44336;
+}
+
+.dot.empty {
+    background-color: transparent; /* Прозрачный цвет для "не проходился" */
+    border: 1px dashed #ccc; /* Пунктирная граница для визуального отличия */
+}
+
+/* Удаляем старый .dot.filled, чтобы он не конфликтовал */
+.dot.filled {
+    /* Эти стили больше не нужны, так как будут использоваться specific .filled-green/.filled-red */
+    /* background-color: #6C63FF; */
+    /* border-color: #6C63FF; */
+    display: none; /* Временно скрываю, чтобы не было конфликтов с новыми классами */
+}
+
 
 /* Адаптивность для блока "Твои успехи" */
 @media (max-width: 768px) {

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арифметика - Квадратный корень</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theory.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img\logo.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="lessons2.html">Квесты</a></li>
+                <li><a href="#">Инструменты</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Прогресс</a></li>
+            </ul>
+
+            <a href="#regis" class="login-btn">Войти</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="theory">
+        <a class="start-lesson-button" href="lessons.html">Назад</a>
+        <h1 class="theory-title">Извлечение квадратного корня</h1>
+
+        <div class="section">
+            <video controls width="800" height="450">
+                <source src="video/Пример корня1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+
+            <p><strong>Квадратный корень из числа <code>a</code></strong> — это число <code>b</code>, которое при возведении в квадрат даёт <code>a</code>.</p>
+
+            <p><strong>Обозначение:</strong><br>
+                <code>√ 25 = 5</code>, потому что <code>5<sup>2</sup> = 25</code>.</p>
+
+            <p><strong>Примеры:</strong><br>
+                <code>√ 16 = 4</code><br>
+                <code>√ 100 = 10</code></p>
+
+            <h2 class="theory-subtitle">Извлечение корня из полных квадратов</h2>
+            <p><strong>Алгоритм:</strong></p>
+            <ol>
+                <li>Вспомнить таблицу квадратов чисел от 1 до 20.</li>
+                <li>Найти число, которое при возведении в квадрат даёт подкоренное выражение.</li>
+            </ol>
+
+            <div class="important">
+                <strong>Таблица для запоминания:</strong>
+                <img src="img/arif_tablic_koren.png" alt="">
+                </div>
+
+            <p><strong>Например:</strong></p>
+            <ol>
+                <li><code>√ 49 = 7</code></li>
+                <li><code>√ 81 = 9</code></li>
+                <li><code>√ 121 = 11</code></li>
+            </ol>
+
+            <h2 class="theory-subtitle">Приближённое извлечение корня</h2>
+            <p>Если число — не полный квадрат:</p>
+            <ol>
+                <li>Найти ближайшие квадраты.</li>
+                <li>Оценить значение между ними.</li>
+            </ol>
+
+            <div class="example">
+                <strong>Пример: <code>√ 50</code></strong><br>
+                <ul>
+                    <li>Ближайшие квадраты: <code>7<sup>2</sup> = 49</code> и <code>8<sup>2</sup> = 64</code>.</li>
+                    <li><code>49 < 50 < 64</code> → <code>7 < √ 50 < 8</code></li>
+                    <li>Приближение: <code>√ 50 ≈ 7.1</code>.</li>
+                </ul>
+            </div>
+
+            <h3 class="theory-podtitle">Метод подбора:</h3>
+            <ol>
+                <li>Попробуем <code>7.1: 7.1<sup>2</sup> = 50.41</code> – много.</li>
+                <li>Попробуем <code>7.07: 7.07<sup>2</sup> ≈ 50</code> – почти точно.</li>
+            </ol>
+            <video controls width="800" height="450">
+                <source src="video/Пример корня2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <h2 class="theory-subtitle">Письменный метод</h2>
+            <h3 class="theory-podtitle">Алгоритм «Столбиком»:</h3>
+            <ol>
+                <li>Разбить число на пары справа налево.</li>
+                <li>Подобрать цифру результата пошагово.</li>
+            </ol>
+
+            <div class="example">
+                <strong>Пример: <code>√ 529</code>.</strong>
+                <ol>
+                    <li>Разбиваем: <code>5 29</code>.</li>
+                    <li>Ищем число, квадрат которого <code>≤ 5</code>: <code>2<sup>2</sup> = 4</code>.</li>
+                    <li>Вычитаем: <code>5 - 4 = 1</code>, сносим <code>29</code> → <code>129</code>.</li>
+                    <li>Удваиваем текущий результат (<code>2 → 4</code>), подбираем цифру <code>x</code>: <code>(40 + x) * x ≤ 129</code>.
+                        <br><code>x = 3</code> (<code>43 * 3 = 129</code>).</li>
+                    <li>Ответ: <code>√ 529 = 23</code>.</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <a class="start-lesson-button" href="test.html">Пройти тест</a>
+    </main>
+
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-section logo-section">
+                <img src="img/Group 44.png" alt="Language2Go Logo">
+                <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Обучение</h3>
+                <ul>
+                    <li><a href="#">Все языки</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Детям и подросткам</a></li>
+                    <li><a href="#">Мини-курсы</a></li>
+                    <li><a href="#">Тренажеры</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3 class="footer-heading">Контакты</h3>
+                <p>+7 (8362) 00-00-00</p>
+                <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
+                <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
+                <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

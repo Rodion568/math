@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арифметика - Методы умножения</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theory.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img\logo.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="lessons2.html">Квесты</a></li>
+                <li><a href="#">Инструменты</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Прогресс</a></li>
+            </ul>
+
+            <a href="#regis" class="login-btn">Войти</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="theory">
+        <a class="start-lesson-button" href="lessons.html">Назад</a>
+        <h1 class="theory-title">Компоненты и методы умножения</h1>
+
+        <div class="section">
+            <video controls width="800" height="450">
+                <source src="video/Пример умножения1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+
+            <p><strong>Компоненты умножения:</strong><br>
+                <code>Множитель × Множитель = Произведение</code></p>
+
+            <h2 class="theory-subtitle">Основные методы умножения</h2>
+
+            <h3 class="theory-podtitle">Способ 1. Разложение на десятки и единицы</h3>
+            <p><strong>Формула:</strong><br>
+                <code>(a + b) × (c + d) = a×c + a×d + b×c + b×d</code></p>
+
+            <div class="example">
+                <strong>Пример 1:</strong><br>
+                <code>12 × 13</code>
+                <ol>
+                    <li>Разложим: <code>(10 + 2) × (10 + 3)</code></li>
+                    <li>Умножим:
+                        <ul>
+                            <li><code>10 × 10 = 100</code></li>
+                            <li><code>10 × 3 = 30</code></li>
+                            <li><code>2 × 10 = 20</code></li>
+                            <li><code>2 × 3 = 6</code></li>
+                        </ul>
+                    </li>
+                    <li>Сложим: <code>100 + 30 + 20 + 6 = 156</code></li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <strong>Пример 2:</strong><br>
+                <code>24 × 15</code><br>
+                <code>(20 + 4) × (10 + 5) = </code><br>
+                <code>20×10 + 20×5 + 4×10 + 4×5 = </code><br>
+                <code>200 + 100 + 40 + 20 = 360</code>
+            </div>
+
+            <h3 class="theory-podtitle">Способ 2. Умножение в столбик</h3>
+            <div class="example">
+                <strong>Пример:</strong><br>
+                <code>23 × 45</code><br>
+                <img src="img/arif_ymnoj.png" alt="">
+                <p><strong>Пошаговое объяснение:</strong></p>
+                <ol>
+                    <li>Умножаем <code>23 × 5</code> :
+                        <ul>
+                            <li><code>3 × 5 = 15</code> (пишем 5, 1 запоминаем)</li>
+                            <li><code>2 × 5 = 10 + 1 = 11</code> → <code>115</code></li>
+                        </ul>
+                    </li>
+                    <li>Умножаем <code>23 × 40</code> :
+                        <ul>
+                            <li>Добавляем 0 (умножаем на 10) → <code>23 × 4 = 92</code> → <code>920</code></li>
+                        </ul>
+                    </li>
+                    <li>Складываем: <code>115 + 920 = 1035</code></li>
+                </ol>
+            </div>
+            <video controls width="800" height="450">
+                <source src="video/Пример умножения2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <h3 class="theory-podtitle">Способ 3. Хитрости для быстрого счёта</h3>
+            <ol>
+                <li><strong>Умножение чисел, близких к 100:</strong><br>
+                    <code>98 × 97 = (100 - 2) × (100 - 3)</code><br>
+                    <strong>Алгоритм:</strong>
+                    <ul>
+                        <li>а) <code>100 - (2 + 3) = 95</code></li>
+                        <li>б) <code>2 × 3 = 6</code></li>
+                        <li>в) Ответ: <code>9506</code></li>
+                    </ul>
+                </li>
+                <li><strong>Если одно число чётное:</strong><br>
+                    <code>16 × 25 = (16:4) × (25×4) = 4 × 100 = 400</code></li>
+                <li><strong>Одинаковые десятки, сумма единиц = 10:</strong><br>
+                    <code>23 × 27:</code>
+                    <ul>
+                        <li>а) Десятки × (десятки + 1) → <code>2 × 3 = 6</code></li>
+                        <li>б) Единицы × единицы → <code>3 × 7 = 21</code></li>
+                        <li>в) Ответ: <code>621</code></li>
+                    </ul>
+                </li>
+            </ol>
+
+        </div>
+
+        <a class="start-lesson-button" href="test.html">Пройти тест</a>
+    </main>
+
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-section logo-section">
+                <img src="img/Group 44.png" alt="Language2Go Logo">
+                <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Обучение</h3>
+                <ul>
+                    <li><a href="#">Все языки</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Детям и подросткам</a></li>
+                    <li><a href="#">Мини-курсы</a></li>
+                    <li><a href="#">Тренажеры</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3 class="footer-heading">Контакты</h3>
+                <p>+7 (8362) 00-00-00</p>
+                <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
+                <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
+                <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
