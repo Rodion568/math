@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const courseCard = this.closest('.course-card');
             const courseTitle = courseCard.querySelector('h2').textContent;
             const courseLevel = courseCard.querySelector('.course-text').textContent;
-            alert(`Начинаем тест по "${courseTitle}" (${courseLevel})`);
+            // alert(`Начинаем тест по "${courseTitle}" (${courseLevel})`);
         });
     });
 
