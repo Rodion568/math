@@ -139,19 +139,19 @@ document.addEventListener('DOMContentLoaded', function () {
 //     // Текущее состояние
 //     let currentView = 'courses';
 //     let currentCourse = '';
-    
+
 //     // DOM элементы
 //     const coursesContainer = document.querySelector('.courses');
 //     const mathDashboard = document.querySelector('.math-dashboard');
 //     const mathSubjectsGrid = document.querySelector('.math-subjects-grid');
 //     const filtersContainer = document.querySelector('.math-learning-app');
-    
+
 //     // Создаем контейнер для уроков
 //     const lessonsContainer = document.createElement('div');
 //     lessonsContainer.className = 'lessons-container';
 //     lessonsContainer.style.display = 'none';
 //     mathSubjectsGrid.appendChild(lessonsContainer);
-    
+
 //     // Создаем кнопку "Назад"
 //     const backButton = document.createElement('button');
 //     backButton.className = 'back-button';
@@ -159,48 +159,48 @@ document.addEventListener('DOMContentLoaded', function () {
 //     backButton.style.display = 'none';
 //     backButton.addEventListener('click', showCoursesView);
 //     mathSubjectsGrid.insertBefore(backButton, coursesContainer);
-    
+
 //     // Группировка предметов
 //     const subjectGroups = {
 //         'Арифметика': ['Арифметика'],
 //         'Математика': ['Алгебра', 'Геометрия', 'Базовая математика', 'Профильная математика', 'Высшая математика'],
 //         'Цифровая математика': ['Дискретная математика', 'Теория чисел', 'Теория вероятностей']
 //     };
-    
+
 //     // Все карточки
 //     const allCards = Array.from(document.querySelectorAll('.course-card'));
-    
+
 //     // Карточки с обучением (без уровня)
 //     const learningCards = allCards.filter(card => !card.querySelector('.course-text'));
-    
+
 //     // Карточки с тестами (с указанием уровня)
 //     const testCards = allCards.filter(card => card.querySelector('.course-text'));
-    
+
 //     // Обработчики для кнопок "Начать обучение"
 //     document.querySelectorAll('.start-lesson-button').forEach(button => {
 //         button.addEventListener('click', function(e) {
 //             if (button.tagName === 'A') {
 //                 e.preventDefault();
 //             }
-            
+
 //             const courseCard = this.closest('.course-card');
 //             if (courseCard.querySelector('.course-text')) return; // Не обрабатываем тесты
-            
+
 //             currentCourse = courseCard.querySelector('h2').textContent;
 //             showLessonsView(currentCourse);
 //         });
 //     });
-    
+
 //     // Показ уроков
 //     function showLessonsView(courseName) {
 //         currentView = 'lessons';
-        
+
 //         // Скрываем курсы
 //         coursesContainer.style.display = 'none';
-        
+
 //         // Показываем кнопку назад
 //         backButton.style.display = 'block';
-        
+
 //         // Генерируем уроки
 //         lessonsContainer.innerHTML = `
 //             <h2 class="course-title">${courseName}</h2>
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //                 </div>
 //             </div>
 //         `;
-        
+
 //         // Обработчики для кнопок уроков
 //         lessonsContainer.querySelectorAll('.start-lesson-btn').forEach(btn => {
 //             btn.addEventListener('click', function() {
@@ -231,28 +231,28 @@ document.addEventListener('DOMContentLoaded', function () {
 //                 alert(`Начинаем ${lessonTitle} по курсу "${courseName}"`);
 //             });
 //         });
-        
+
 //         lessonsContainer.style.display = 'block';
 //     }
-    
+
 //     // Показ курсов
 //     function showCoursesView() {
 //         currentView = 'courses';
-        
+
 //         // Показываем курсы
 //         coursesContainer.style.display = 'grid';
-        
+
 //         // Скрываем кнопку назад и уроки
 //         backButton.style.display = 'none';
 //         lessonsContainer.style.display = 'none';
-        
+
 //         // Применяем текущие фильтры
 //         applyFilters();
 //     }
-    
+
 //     // Инициализация фильтров
 //     initFilters();
-    
+
 //     function initFilters() {
 //         const filters = {
 //             subject: 'all',
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //                     card.style.display = 'block';
 //                     hasVisibleCards = true;
 //                 });
-                
+
 //                 noResultsMessage.style.display = 'none';
 //                 return;
 //             }
@@ -670,19 +670,19 @@ document.addEventListener('DOMContentLoaded', function () {
 //     // Текущее состояние
 //     let currentView = 'courses';
 //     let currentCourse = '';
-    
+
 //     // DOM элементы
 //     const coursesContainer = document.querySelector('.courses');
 //     const mathDashboard = document.querySelector('.math-dashboard');
 //     const mathSubjectsGrid = document.querySelector('.math-subjects-grid');
 //     const filtersContainer = document.querySelector('.math-learning-app');
-    
+
 //     // Создаем контейнер для уроков
 //     const lessonsContainer = document.createElement('div');
 //     lessonsContainer.className = 'lessons-container';
 //     lessonsContainer.style.display = 'none';
 //     mathSubjectsGrid.appendChild(lessonsContainer);
-    
+
 //     // Создаем кнопку "Назад"
 //     const backButton = document.createElement('button');
 //     backButton.className = 'back-button';
@@ -690,48 +690,48 @@ document.addEventListener('DOMContentLoaded', function () {
 //     backButton.style.display = 'none';
 //     backButton.addEventListener('click', showCoursesView);
 //     mathSubjectsGrid.insertBefore(backButton, coursesContainer);
-    
+
 //     // Группировка предметов
 //     const subjectGroups = {
 //         'Арифметика': ['Арифметика'],
 //         'Математика': ['Алгебра', 'Геометрия', 'Базовая математика', 'Профильная математика', 'Высшая математика'],
 //         'Цифровая математика': ['Дискретная математика', 'Теория чисел', 'Теория вероятностей']
 //     };
-    
+
 //     // Все карточки
 //     const allCards = Array.from(document.querySelectorAll('.course-card'));
-    
+
 //     // Карточки с обучением (без уровня)
 //     const learningCards = allCards.filter(card => !card.querySelector('.course-text'));
-    
+
 //     // Карточки с тестами (с указанием уровня)
 //     const testCards = allCards.filter(card => card.querySelector('.course-text'));
-    
+
 //     // Обработчики для кнопок "Начать обучение"
 //     document.querySelectorAll('.start-lesson-button').forEach(button => {
 //         button.addEventListener('click', function(e) {
 //             if (button.tagName === 'A') {
 //                 e.preventDefault();
 //             }
-            
+
 //             const courseCard = this.closest('.course-card');
 //             if (courseCard.querySelector('.course-text')) return; // Не обрабатываем тесты
-            
+
 //             currentCourse = courseCard.querySelector('h2').textContent;
 //             showLessonsView(currentCourse);
 //         });
 //     });
-    
+
 //     // Показ уроков
 //     function showLessonsView(courseName) {
 //         currentView = 'lessons';
-        
+
 //         // Скрываем курсы
 //         coursesContainer.style.display = 'none';
-        
+
 //         // Показываем кнопку назад
 //         backButton.style.display = 'block';
-        
+
 //         // Генерируем уроки
 //         lessonsContainer.innerHTML = `
 //             <h2 class="course-title">${courseName}</h2>
@@ -754,7 +754,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //                 </div>
 //             </div>
 //         `;
-        
+
 //         // Обработчики для кнопок уроков
 //         lessonsContainer.querySelectorAll('.start-lesson-btn').forEach(btn => {
 //             btn.addEventListener('click', function() {
@@ -762,28 +762,28 @@ document.addEventListener('DOMContentLoaded', function () {
 //                 alert(`Начинаем ${lessonTitle} по курсу "${courseName}"`);
 //             });
 //         });
-        
+
 //         lessonsContainer.style.display = 'block';
 //     }
-    
+
 //     // Показ курсов
 //     function showCoursesView() {
 //         currentView = 'courses';
-        
+
 //         // Показываем курсы
 //         coursesContainer.style.display = 'grid';
-        
+
 //         // Скрываем кнопку назад и уроки
 //         backButton.style.display = 'none';
 //         lessonsContainer.style.display = 'none';
-        
+
 //         // Применяем текущие фильтры
 //         applyFilters();
 //     }
-    
+
 //     // Инициализация фильтров
 //     initFilters();
-    
+
 //     function initFilters() {
 //         const filters = {
 //             subject: 'all',
@@ -844,7 +844,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //                     card.style.display = 'block';
 //                     hasVisibleCards = true;
 //                 });
-                
+
 //                 noResultsMessage.style.display = 'none';
 //                 return;
 //             }
@@ -897,58 +897,56 @@ document.addEventListener('DOMContentLoaded', function () {
 //     }
 // });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Текущее состояние
     let currentView = 'courses';
     let currentCourse = '';
-    let currentFilter = 'all'; // Добавляем переменную для хранения текущего фильтра
-    
+    let currentFilter = 'all';
+
     // DOM элементы
     const coursesContainer = document.querySelector('.courses');
     const mathSubjectsGrid = document.querySelector('.math-subjects-grid');
     const noResultsMessage = document.querySelector('.no-results-message');
-    
-    // Создаем контейнер для уроков
-    const lessonsContainer = document.createElement('div');
-    lessonsContainer.className = 'lessons-container';
-    lessonsContainer.style.display = 'none';
-    mathSubjectsGrid.appendChild(lessonsContainer);
-    
-    // Создаем кнопку "Назад"
-    const backButton = document.createElement('button');
-    backButton.className = 'back-button';
-    backButton.textContent = '← Назад к курсам';
-    backButton.style.display = 'none';
-    backButton.addEventListener('click', function() {
-        showCoursesView();
-        applyFilters(); // Добавляем применение фильтров при нажатии "Назад"
-    });
-    mathSubjectsGrid.insertBefore(backButton, coursesContainer);
-    
+    const lessonsContainer = document.querySelector('.lessons-container');
+    const backButton = document.querySelector('.back-button');
+    const dynamicCourseTitle = document.getElementById('dynamic-course-title');
+    const courseNameSpans = document.querySelectorAll('.course-name');
+
     // Группировка предметов
     const subjectGroups = {
         'Арифметика': ['Арифметика'],
         'Математика': ['Алгебра', 'Геометрия', 'Базовая математика', 'Профильная математика', 'Высшая математика'],
         'Цифровая математика': ['Дискретная математика', 'Теория чисел', 'Теория вероятностей']
     };
-    
+
     // Все карточки
     const allCards = Array.from(document.querySelectorAll('.course-card'));
     const learningCards = allCards.filter(card => !card.querySelector('.course-text'));
-    
+
+    const availableCourses = ['Арифметика'];
+
     // Обработчики для кнопок "Начать обучение"
     document.querySelectorAll('.start-lesson-button').forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             if (button.tagName === 'A') {
                 e.preventDefault();
             }
-            
+
             const courseCard = this.closest('.course-card');
             currentCourse = courseCard.querySelector('h2').textContent;
-            showLessonsView(currentCourse);
+            // Проверяем доступность уроков для этого курса
+            if (availableCourses.includes(currentCourse)) {
+                showLessonsView(currentCourse);
+            } else {
+                alert('Уроки для этого курса пока недоступны');
+                // Или можно использовать window.location.href для перенаправления
+            }
         });
     });
-    
+
+    // Обработчик кнопки "Назад"
+    backButton.addEventListener('click', showCoursesView);
+
     // Показ уроков
     function showLessonsView(courseName) {
         currentView = 'lessons';
@@ -956,30 +954,12 @@ document.addEventListener('DOMContentLoaded', function() {
         coursesContainer.style.display = 'none';
         backButton.style.display = 'block';
         lessonsContainer.style.display = 'block';
-        
-        lessonsContainer.innerHTML = `
-            <h2 class="course-title">${courseName}</h2>
-            <div class="lesson-list">
-                <div class="lesson-card">
-                    <h3>Урок 1: Основы ${courseName}</h3>
-                    <a style="display: inline-block" href="../theory.html" class="start-lesson-btn">Начать урок</a>
-                </div>
-                <div class="lesson-card">
-                    <h3>Урок 2: Продвинутые темы</h3>
-                    <a style="display: inline-block" href="../theory2.html" class="start-lesson-btn">Начать урок</a>
-                </div>
-                <div class="lesson-card">
-                    <h3>Урок 3: Практические задания</h3>
-                    <button class="start-lesson-btn">Начать урок</button>
-                </div>
-                <div class="lesson-card">
-                    <h3>Урок 4: Примеры из реальной жизни</h3>
-                    <button class="start-lesson-btn">Начать урок</button>
-                </div>
-            </div>
-        `;
+
+        // Обновляем название курса во всех местах
+        dynamicCourseTitle.textContent = courseName;
+        courseNameSpans.forEach(span => span.textContent = courseName);
     }
-    
+
     // Показ курсов
     function showCoursesView() {
         currentView = 'courses';
@@ -988,10 +968,10 @@ document.addEventListener('DOMContentLoaded', function() {
         backButton.style.display = 'none';
         lessonsContainer.style.display = 'none';
     }
-    
+
     // Инициализация фильтров
     initFilters();
-    
+
     function initFilters() {
         const subjectDropdown = document.querySelector('.subject-dropdown');
         const subjectBtn = subjectDropdown.querySelector('.dropdown-btn');
@@ -1010,16 +990,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.stopPropagation();
                 const selectedValue = item.getAttribute('data-value');
                 const selectedText = item.textContent;
-                
-                currentFilter = selectedValue; // Сохраняем выбранный фильтр
+
+                currentFilter = selectedValue;
                 subjectBtn.textContent = selectedValue === 'all' ? 'Выберите предмет' : selectedText;
                 subjectContent.style.display = 'none';
-                
-                // Если мы на странице уроков - переключаемся на курсы
+
                 if (currentView === 'lessons') {
                     showCoursesView();
                 }
-                // Всегда применяем фильтры
                 applyFilters();
             });
         });
@@ -1029,9 +1007,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             learningCards.forEach(card => {
                 const cardTitle = card.querySelector('h2').textContent;
-                let shouldShow = currentFilter === 'all' || 
-                               (subjectGroups[currentFilter] && 
-                                subjectGroups[currentFilter].includes(cardTitle));
+                let shouldShow = currentFilter === 'all' ||
+                    (subjectGroups[currentFilter] &&
+                        subjectGroups[currentFilter].includes(cardTitle));
 
                 card.style.display = shouldShow ? 'block' : 'none';
                 if (shouldShow) hasVisibleCards = true;
@@ -1044,7 +1022,6 @@ document.addEventListener('DOMContentLoaded', function() {
             subjectContent.style.display = 'none';
         });
 
-        // Применяем фильтры при загрузке
         applyFilters();
     }
 });
