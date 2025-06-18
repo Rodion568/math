@@ -945,6 +945,7 @@ ul li a:hover {
 }
 
 .start-lesson-btn {
+    display: inline-block;
     background: #3498db;
     color: white;
     border: none;

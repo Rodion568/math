@@ -22,7 +22,7 @@
                 <li><a href="#">Сообщества</a></li>
                 <li><a href="#">Прогресс</a></li>
             </ul>
-            
+
             <a href="register.html" class="login-btn">Войти</a>
             <div class="burger">
                 <div class="line1"></div>
@@ -48,6 +48,8 @@
                     </div>
                 </div>
                 <div class="math-subjects-grid">
+                    <!-- Кнопка "Назад" (будет показана/скрыта через JS) -->
+                    <button class="back-button" style="display: none;">← Назад к курсам</button>
                     <div class="no-results-message" style="display: none;">
                         <div class="empty-state">
                             <h3>Ничего не найдено</h3>
@@ -60,6 +62,7 @@
                             <h2>Арифметика</h2>
                             <button class="start-lesson-button">Начать обучение</button>
                         </div>
+
 
                         <div class="course-card">
                             <h2>Алгебра</h2>
@@ -101,6 +104,30 @@
                             <button class="start-lesson-button">Начать обучение</button>
                         </div>
                     </div>
+
+                    <!-- Контейнер для уроков (изначально скрыт) -->
+                    <div class="lessons-container" style="display: none;">
+                        <h2 class="course-title" id="dynamic-course-title"></h2>
+                        <div class="lesson-list">
+                            <div class="lesson-card">
+                                <h3>Урок 1: Основы <span class="course-name"></span></h3>
+                                <a href="theory.html" class="start-lesson-btn">Начать урок</a>
+                            </div>
+                            <div class="lesson-card">
+                                <h3>Урок 2: Продвинутые темы</h3>
+                                <a href="theory2.html" class="start-lesson-btn">Начать урок</a>
+                            </div>
+                            <div class="lesson-card">
+                                <h3>Урок 3: Практические задания</h3>
+                                <button class="start-lesson-btn">Начать урок</button>
+                            </div>
+                            <div class="lesson-card">
+                                <h3>Урок 4: Примеры из реальной жизни</h3>
+                                <button class="start-lesson-btn">Начать урок</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
