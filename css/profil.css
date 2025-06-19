@@ -101,6 +101,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    margin-bottom: 60px; /* Добавлено: отступ снизу для сетки курсов */
 }
 
 .course-card {
@@ -433,9 +434,7 @@ nav {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     max-width: 800px;
-    /* Ограничиваем ширину контейнера прогресса */
-    margin: 0 auto;
-    /* Центрируем его */
+    margin: 0 auto 30px auto; /* Изменено: добавлен margin-bottom: 30px для отступа между блоками */
 }
 
 .progress-row {
@@ -495,10 +494,8 @@ nav {
     height: 18px;
     border-radius: 50%;
     /* Делает круглой */
-    background-color: #E0E0FF;
-    /* Цвет пустой точки (светло-фиолетовый) */
-    border: 1px solid #D2D2FF;
-    /* Граница точки */
+    /* background-color: #E0E0FF; */ /* Удалено или закомментировано */
+    /* border: 1px solid #D2D2FF; */ /* Удалено или закомментировано */
 }
 
 /* НОВЫЕ КЛАССЫ ДЛЯ ЦВЕТОВ КРУЖОЧКОВ */
@@ -515,10 +512,8 @@ nav {
 }
 
 .dot.empty {
-    background-color: transparent;
-    /* Прозрачный цвет для "не проходился" */
-    border: 1px dashed #ccc;
-    /* Пунктирная граница для визуального отличия */
+    background-color: #E0E0E0; /* Серый цвет для "не пройден" */
+    border: 1px solid #C0C0C0; /* Серая обводка */
 }
 
 /* Удаляем старый .dot.filled, чтобы он не конфликтовал */
@@ -528,6 +523,22 @@ nav {
     /* border-color: #6C63FF; */
     display: none;
     /* Временно скрываю, чтобы не было конфликтов с новыми классами */
+}
+
+/* Добавлены стили для "Проверки знаний" */
+.progress-details-container.knowledge-check-container .dot.filled-green {
+    background-color: #1a73e8; /* Синий цвет для пройденных отлично */
+    border-color: #1a73e8;
+}
+
+.progress-details-container.knowledge-check-container .dot.filled-red {
+    background-color: #6C63FF; /* Фиолетовый оттенок для пройденных плохо */
+    border-color: #6C63FF;
+}
+
+.progress-details-container.knowledge-check-container .dot.empty {
+    background-color: #A0B0C0; /* Более светлый синий/серый для непройденных */
+    border-color: #8090A0;
 }
 
 
