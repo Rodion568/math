@@ -9,243 +9,256 @@
     <link rel="stylesheet" href="css\profil.css">
 </head>
 
-<body> <header>
-    <nav>
-        <div class="logo"><img src="img\logo.svg" alt=""></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="lessons.html">Уроки</a></li>
-            <li><a href="checking.html">Проверка знаний</a></li>
-            <li><a href="#">Квесты</a></li>
-            <li><a href="#">Инструменты</a></li>
-            <li><a href="#">Сообщества</a></li>
-            <li><a href="#">Прогресс</a></li>
-        </ul>
-        <div class="user-dropdown">
-            <button class="user-info-btn">
-                <svg class="icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                </svg>
-                <span>Иван И.</span>
-                <svg class="icon arrow-down" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-            </button>
-            <div class="dropdown-content">
-                <a href="edit-profile.html">Редактировать профиль</a>
-                <a href="logout.html">Выйти</a>
-            </div>
-        </div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-</header>
-
-
-<main class="container">
-    <div class="profile-header">
-        <a href="index.html" class="back-link">
-            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-            </svg>
-            Профиль
-        </a>
-    </div>
-
-    <div class="profile-details">
-        <h1>Иванов Иван</h1>
-        <p>id 54132</p>
-        <p class="password-row">Логин: <span>Name54</span></p>
-        <p class="password-row">Почта: <span>name54@mail.ru</span></p>
-        <p class="password-row">Пароль: <span id="password-display">ук********</span> <button id="toggle-password"
-                class="eye-btn">
-                <svg class="icon eye-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                </svg>
-            </button>
-        </p>
-    </div>
-
-    <div class="courses-grid">
-        <div class="course-card">
-            <div class="card-icon">
-                <img src="img/arifmetika.png" alt="Арифметика">
-            </div>
-            <h3>Арифметика</h3>
-            <p>Уровень: Начальный</p>
-            <p>Формат обучения: теория</p>
-            <a href="lessons.html">
-                <button class="btn-primary">Продолжить урок</button>
-            </a>
-        </div>
-        <div class="course-card">
-            <div class="card-icon">
-                <img src="img/algebra.png" alt="Алгебра">
-            </div>
-            <h3>Алгебра</h3>
-            <p>Уровень: Начальный</p>
-            <p>Формат обучения: теория</p>
-            <a href="lessons.html"></a>
-            <button class="btn-primary">Продолжить урок</button>
-            </a>
-        </div>
-        <div class="course-card">
-            <div class="card-icon">
-                <img src="img/geometry.png" alt="Геометрия">
-            </div>
-            <h3>Геометрия</h3>
-            <p>Уровень: Начальный</p>
-            <p>Формат обучения: теория</p>
-            <a href="lessons.html">
-                <button class="btn-primary">Продолжить урок</button>
-            </a>
-        </div>
-    </div>
-    <section class="your-progress-section">
-        <h2 class="section-title">Твои успехи</h2>
-
-        <div class="progress-tabs-container">
-            <div class="progress-tabs-wrapper">
-                <button class="tab-button active">Арифметика</button>
-                <button class="tab-button">Базовая математика</button>
-                <button class="tab-button">Алгебра</button>
-                <button class="tab-button">Геометрия</button>
-                <button class="tab-button">Профильная математика</button>
-                <button class="tab-button">Высшая математика</button>
-                <button class="tab-button">Дискретная математика</button>
-                <button class="tab-button">Теория чисел</button>
-                <button class="tab-button">Теория вероятностей</button>
-            </div>
-        </div>
-        <div class="progress-details-container">
-            <div class="progress-row">
-                <span class="progress-label">Формат обучения</span>
-                <span class="progress-label right-aligned">Прогресс</span>
-            </div>
-            <div class="progress-row">
-                <span class="progress-item">Теория</span>
-                <div class="progress-dots">
-                    <span class="dot filled-green" title="Урок 1: Пройден отлично"></span>
-                    <span class="dot filled-green" title="Урок 2: Пройден отлично"></span>
-                    <span class="dot filled-red" title="Урок 3: Пройден плохо"></span>
-                    <span class="dot empty" title="Урок 4: Не пройден"></span>
-                </div>
-            </div>
-            <div class="progress-row">
-                <span class="progress-item">Тест</span>
-                <div class="progress-dots">
-                    <span class="dot filled-green" title="Тест. Пройден отлично"></span>
-                    <span class="dot filled-green" title="Тест. Пройден отлично"></span>
-                    <span class="dot filled-red" title="Тест. Пройден плохо"></span>
-                    <span class="dot empty" title="Тест. Не пройден"></span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-details-container knowledge-check-container">
-            <div class="progress-row">
-                <span class="progress-label">Формат обучения</span>
-                <span class="progress-label right-aligned">Прогресс</span>
-            </div>
-            <div class="progress-row">
-                <span class="progress-item">Проверка знаний</span>
-                <div class="progress-dots">
-                    <span class="dot filled-green" title="Проверка знаний: Пройдена отлично"></span>
-                    <span class="dot filled-red" title="Проверка знаний: Пройдена плохо"></span>
-                    <span class="dot empty" title="Проверка знаний: Не пройдена"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-
-<footer class="footer">
-    <div class="container_footer">
-        <div class="footer-section logo-section">
-            <img src="img/Group 44.png" alt="Language2Go Logo">
-            <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
-        </div>
-
-        <div class="footer-section">
-            <h3 class="footer-heading">Обучение</h3>
-            <ul>
-                <li><a href="#">Все языки</a></li>
-                <li><a href="#">Взрослым</a></li>
-                <li><a href="#">Детям и подросткам</a></li>
-                <li><a href="#">Мини-курсы</a></li>
-                <li><a href="#">Тренажеры</a></li>
-                <li><a href="#">Индивидуальные занятия</a></li>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="img\logo.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="checking.html">Проверка знаний</a></li>
+                <li><a href="#">Квесты</a></li>
+                <li><a href="#">Инструменты</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Прогресс</a></li>
             </ul>
+            <div class="user-dropdown">
+                <button class="user-info-btn">
+                    <svg class="icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    <span>Иван И.</span>
+                    <svg class="icon arrow-down" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="edit-profile.html">Редактировать профиль</a>
+                    <a href="logout.html">Выйти</a>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <div class="profile-header">
+            <a href="index.html" class="back-link">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                </svg>
+                Профиль
+            </a>
         </div>
 
-        <div class="footer-section">
-            <h3 class="footer-heading">Информация</h3>
-            <ul>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Частые вопросы</a></li>
-                <li><a href="#">Условия оплаты</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+        <div class="profile-details">
+            <h1>Иванов Иван</h1>
+            <p>id 54132</p>
+            <p class="password-row">Логин: <span>Name54</span></p>
+            <p class="password-row">Почта: <span>name54@mail.ru</span></p>
+            <p class="password-row">Пароль: <span id="password-display">ук********</span> <button id="toggle-password"
+                    class="eye-btn">
+                    <svg class="icon eye-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                </button>
+            </p>
         </div>
 
-        <div class="footer-section contact-info">
-            <h3 class="footer-heading">Контакты</h3>
-            <p>+7 (8362) 00-00-00</p>
-            <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
-            <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
-            <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
-
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="card-icon">
+                    <img src="img/arifmetika.png" alt="Арифметика">
+                </div>
+                <h3>Арифметика</h3>
+                <p>Уровень: Начальный</p>
+                <p>Формат обучения: теория</p>
+                <a href="lessons.html">
+                    <button class="btn-primary">Продолжить урок</button>
+                </a>
+            </div>
+            <div class="course-card">
+                <div class="card-icon">
+                    <img src="img/algebra.png" alt="Алгебра">
+                </div>
+                <h3>Алгебра</h3>
+                <p>Уровень: Начальный</p>
+                <p>Формат обучения: теория</p>
+                <a href="lessons.html"></a>
+                <button class="btn-primary">Продолжить урок</button>
+                </a>
+            </div>
+            <div class="course-card">
+                <div class="card-icon">
+                    <img src="img/geometry.png" alt="Геометрия">
+                </div>
+                <h3>Геометрия</h3>
+                <p>Уровень: Начальный</p>
+                <p>Формат обучения: теория</p>
+                <a href="lessons.html">
+                    <button class="btn-primary">Продолжить урок</button>
+                </a>
+            </div>
         </div>
-    </div>
-</footer>
+        <section class="your-progress-section">
+            <h2 class="section-title">Твои успехи</h2>
 
-<script src="js/burger.js"> </script>
-<script>
-    // Dropdown menu functionality (для "Иван И.")
-    document.addEventListener('DOMContentLoaded', function () {
-        const userInfoBtn = document.querySelector('.user-info-btn');
-        const dropdownContent = document.querySelector('.dropdown-content');
+            <div class="progress-tabs-container">
+                <div class="progress-tabs-wrapper">
+                    <button class="tab-button active">Арифметика</button>
+                    <button class="tab-button">Базовая математика</button>
+                    <button class="tab-button">Алгебра</button>
+                    <button class="tab-button">Геометрия</button>
+                    <button class="tab-button">Профильная математика</button>
+                    <button class="tab-button">Высшая математика</button>
+                    <button class="tab-button">Дискретная математика</button>
+                    <button class="tab-button">Теория чисел</button>
+                    <button class="tab-button">Теория вероятностей</button>
+                </div>
+            </div>
+            <div class="progress-details-container">
+                <div class="progress-row">
+                    <span class="progress-label">Формат обучения</span>
+                    <span class="progress-label right-aligned">Прогресс</span>
+                </div>
+                <div class="progress-row">
+                    <span class="progress-item">Теория</span>
+                    <div class="progress-dots">
+                        <span class="dot filled-green" title="Урок 1: Пройден отлично"></span>
+                        <span class="dot filled-green" title="Урок 2: Пройден отлично"></span>
+                        <span class="dot empty" title="Урок 3: Не пройден"></span>
+                        <span class="dot empty" title="Урок 4: Не пройден"></span>
+                    </div>
+                </div>
+                <div class="progress-row">
+                    <span class="progress-item">Тест</span>
+                    <div class="progress-dots">
+                        <span class="dot filled-green" title="Тест. Пройден отлично"></span>
+                        <span class="dot filled-red" title="Тест. Пройден плохо"></span>
+                        <span class="dot empty" title="Тест. Не пройден"></span>
+                        <span class="dot empty" title="Тест. Не пройден"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="knowledge-check-table-container">
+                <h2>Проверка знаний</h2>
+                <div class="table-header-row">
+                    <div class="table-header-cell">Начальный</div>
+                    <div class="table-header-cell">Средний</div>
+                    <div class="table-header-cell">Продвинутый</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell green-text">
+                        <span class="percentage">87,5%</span>
+                        <span class="date">12.06.2025</span>
+                        <span class="time">25 мин 54 сек</span>
+                    </div>
+                    <div class="table-cell red-text">
+                        <span class="percentage">37,5%</span>
+                        <span class="date">15.06.2025</span>
+                        <span class="time">20 мин 12 сек</span>
+                    </div>
+                    <div class="table-cell gray-text">
+                        <span class="percentage">0%</span>
+                        <span class="date">-</span>
+                        <span class="time">-</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        if (userInfoBtn && dropdownContent) { // Проверяем, что элементы существуют
-            userInfoBtn.addEventListener('click', function (event) {
-                event.stopPropagation(); // Предотвращаем закрытие при клике внутри кнопки
-                dropdownContent.classList.toggle('show'); // Переключаем класс 'show'
-            });
 
-            // Закрываем выпадающий список, если клик произошел вне его
-            window.addEventListener('click', function (event) {
-                if (!event.target.closest('.user-dropdown')) { // Проверяем, что клик не был внутри дропдауна
-                    if (dropdownContent.classList.contains('show')) {
-                        dropdownContent.classList.remove('show');
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-section logo-section">
+                <img src="img/Group 44.png" alt="Language2Go Logo">
+                <p>Мат - интерактивная платформа для легкого, удобного и быстрого изучения разных видов математики.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Обучение</h3>
+                <ul>
+                    <li><a href="#">Все языки</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Детям и подросткам</a></li>
+                    <li><a href="#">Мини-курсы</a></li>
+                    <li><a href="#">Тренажеры</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3 class="footer-heading">Контакты</h3>
+                <p>+7 (8362) 00-00-00</p>
+                <p><a href="mailto:math@mail.ru">math@mail.ru</a></p>
+                <p><a href="mailto:supportmath@mail.ru">supportmath@mail.ru</a></p>
+                <p>Йошкар-Ола, ул.Машиностроителей 15.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"> </script>
+    <script>
+        // Dropdown menu functionality (для "Иван И.")
+        document.addEventListener('DOMContentLoaded', function () {
+            const userInfoBtn = document.querySelector('.user-info-btn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            if (userInfoBtn && dropdownContent) { // Проверяем, что элементы существуют
+                userInfoBtn.addEventListener('click', function (event) {
+                    event.stopPropagation(); // Предотвращаем закрытие при клике внутри кнопки
+                    dropdownContent.classList.toggle('show'); // Переключаем класс 'show'
+                });
+
+                // Закрываем выпадающий список, если клик произошел вне его
+                window.addEventListener('click', function (event) {
+                    if (!event.target.closest('.user-dropdown')) { // Проверяем, что клик не был внутри дропдауна
+                        if (dropdownContent.classList.contains('show')) {
+                            dropdownContent.classList.remove('show');
+                        }
                     }
-                }
-            });
-        }
+                });
+            }
 
-        // Ваш существующий код для переключения видимости пароля
-        const togglePasswordBtn = document.getElementById('toggle-password');
-        const passwordDisplay = document.getElementById('password-display');
-        const actualPassword = "MySecretPassword123"; // Замените на реальный пароль
+            // Ваш существующий код для переключения видимости пароля
+            const togglePasswordBtn = document.getElementById('toggle-password');
+            const passwordDisplay = document.getElementById('password-display');
+            const actualPassword = "MySecretPassword123"; // Замените на реальный пароль
 
-        if (togglePasswordBtn && passwordDisplay) { // Проверяем, что элементы существуют
-            togglePasswordBtn.addEventListener('click', function () {
-                if (passwordDisplay.textContent === 'ук********') {
-                    passwordDisplay.textContent = actualPassword;
-                } else {
-                    passwordDisplay.textContent = 'ук********';
-                }
-            });
-        }
-    });
-</script>
+            if (togglePasswordBtn && passwordDisplay) { // Проверяем, что элементы существуют
+                togglePasswordBtn.addEventListener('click', function () {
+                    if (passwordDisplay.textContent === 'ук********') {
+                        passwordDisplay.textContent = actualPassword;
+                    } else {
+                        passwordDisplay.textContent = 'ук********';
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 

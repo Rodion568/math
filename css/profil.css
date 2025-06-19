@@ -101,7 +101,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    margin-bottom: 60px; /* Добавлено: отступ снизу для сетки курсов */
+    margin-bottom: 60px;
+    /* Добавлено: отступ снизу для сетки курсов */
 }
 
 .course-card {
@@ -434,12 +435,13 @@ nav {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     max-width: 800px;
-    margin: 0 auto 30px auto; /* Изменено: добавлен margin-bottom: 30px для отступа между блоками */
+    margin: 0 auto 30px auto;
+    /* Изменено: добавлен margin-bottom: 30px для отступа между блоками */
 }
 
 .progress-row {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between; /* Adjusted to space-between for better alignment */
     align-items: center;
     padding: 12px 0;
     border-bottom: 1px solid #eee;
@@ -462,30 +464,30 @@ nav {
 
 .progress-label {
     font-size: 16px;
-    color: #555;
-    /* border-right: 3px solid #ccc; */
-    /* flex-grow: 1; */
-    /* Позволяет метке занять доступное пространство */
+    color: #003370; /* Standardized color */
+    flex-basis: 30%; /* Give it a fixed basis to align with knowledge check headers */
+    text-align: left;
 }
 
 .progress-label.right-aligned {
-    /* text-align: right; */
-    margin-left: 10px;
+    text-align: right;
+    flex-basis: 70%; /* Occupy remaining space */
 }
 
 .progress-item {
-    width: 150px;
+    width: 150px; /* This might need adjustment with flex-basis */
     font-size: 16px;
     font-weight: 500;
     color: #003370;
     min-width: 120px;
-    /* Минимальная ширина для выравнивания */
+    text-align: left; /* Align to the left */
 }
 
 .progress-dots {
     display: flex;
     gap: 8px;
-    /* Отступ между точками */
+    justify-content: flex-end; /* Align dots to the right */
+    flex-grow: 1; /* Allow dots to take up remaining space */
 }
 
 .dot {
@@ -494,8 +496,6 @@ nav {
     height: 18px;
     border-radius: 50%;
     /* Делает круглой */
-    /* background-color: #E0E0FF; */ /* Удалено или закомментировано */
-    /* border: 1px solid #D2D2FF; */ /* Удалено или закомментировано */
 }
 
 /* НОВЫЕ КЛАССЫ ДЛЯ ЦВЕТОВ КРУЖОЧКОВ */
@@ -512,33 +512,10 @@ nav {
 }
 
 .dot.empty {
-    background-color: #E0E0E0; /* Серый цвет для "не пройден" */
-    border: 1px solid #C0C0C0; /* Серая обводка */
-}
-
-/* Удаляем старый .dot.filled, чтобы он не конфликтовал */
-.dot.filled {
-    /* Эти стили больше не нужны, так как будут использоваться specific .filled-green/.filled-red */
-    /* background-color: #6C63FF; */
-    /* border-color: #6C63FF; */
-    display: none;
-    /* Временно скрываю, чтобы не было конфликтов с новыми классами */
-}
-
-/* Добавлены стили для "Проверки знаний" */
-.progress-details-container.knowledge-check-container .dot.filled-green {
-    background-color: #1a73e8; /* Синий цвет для пройденных отлично */
-    border-color: #1a73e8;
-}
-
-.progress-details-container.knowledge-check-container .dot.filled-red {
-    background-color: #6C63FF; /* Фиолетовый оттенок для пройденных плохо */
-    border-color: #6C63FF;
-}
-
-.progress-details-container.knowledge-check-container .dot.empty {
-    background-color: #A0B0C0; /* Более светлый синий/серый для непройденных */
-    border-color: #8090A0;
+    background-color: #E0E0E0;
+    /* Серый цвет для "не пройден" */
+    border: 1px solid #C0C0C0;
+    /* Серая обводка */
 }
 
 
@@ -612,5 +589,171 @@ nav {
     .progress-item {
         min-width: auto;
         /* Убираем минимальную ширину */
+    }
+}
+
+
+/* НОВЫЕ СТИЛИ ДЛЯ ТАБЛИЦЫ "ПРОВЕРКА ЗНАНИЙ" */
+.knowledge-check-table-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 30px auto;
+    display: grid; /* Changed to grid for better control */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    border: 1px solid #e0e0e0; /* Overall border for the grid */
+    overflow: hidden; /* Ensures border-radius works without internal cell issues */
+}
+
+.knowledge-check-table-container h2 {
+    grid-column: 1 / -1; /* Make the heading span all columns */
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #003370;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee; /* Separator below heading */
+}
+
+.table-header-row {
+    display: contents; /* Allows grid items to be children of the grid container */
+}
+
+.table-header-cell {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    color: #003370;
+    font-size: 16px;
+    padding: 15px;
+    border-bottom: 2px solid #D2D2FF;
+    text-align: center;
+    /* Apply borders to each cell individually to create the grid lines */
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0; /* Add top border for headers */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Remove right border for the last header cell */
+.table-header-cell:last-child {
+    border-right: none;
+}
+
+/* Remove left border for the first header cell */
+.table-header-cell:first-child {
+    border-left: none;
+}
+
+
+.table-row {
+    display: contents; /* Allows grid items to be children of the grid container */
+}
+
+.table-cell {
+    font-size: 15px;
+    color: #003370; /* Default color for all text in cells */
+    line-height: 1.5;
+    padding: 15px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox for vertical alignment and stacking content */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Remove right border for the last cell in a row */
+.table-cell:nth-child(3n) { /* Every 3rd cell is the last in a row */
+    border-right: none;
+}
+
+/* Remove left border for the first cell in a row */
+.table-cell:nth-child(3n + 1) { /* Every 1st cell in a row */
+    border-left: none;
+}
+
+/* Remove bottom border for cells in the last logical row (assuming only one data row) */
+.table-row:last-child .table-cell {
+    border-bottom: none;
+}
+
+
+.table-cell .percentage {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.table-cell .date,
+.table-cell .time {
+    display: block;
+    font-size: 13px;
+    color: #555; /* Standardized secondary color */
+}
+
+/* Colors for specific cells as per images, applied only to percentage, date, and time */
+.table-cell.green-text .percentage,
+.table-cell.green-text .date,
+.table-cell.green-text .time {
+    color: #4CAF50; /* Green for 87.5% */
+}
+
+.table-cell.red-text .percentage,
+.table-cell.red-text .date,
+.table-cell.red-text .time {
+    color: #F44336; /* Red for 37.5% */
+}
+
+.table-cell.gray-text .percentage,
+.table-cell.gray-text .date,
+.table-cell.gray-text .time {
+    color: #B0B0B0; /* Gray for 0% */
+}
+
+/* Adjustments for the headers in the "Проверка знаний" section to align with image_a5d95f.png */
+.knowledge-check-table-container .table-header-cell {
+    border-bottom: 2px solid #D2D2FF;
+}
+
+/* Media queries for responsiveness of the knowledge check table */
+@media (max-width: 768px) {
+    .knowledge-check-table-container {
+        padding: 10px;
+        margin: 20px auto;
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+
+    .knowledge-check-table-container h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .table-header-cell,
+    .table-cell {
+        padding: 10px;
+        font-size: 14px;
+        border: none; /* Remove individual borders when stacked */
+        border-bottom: 1px solid #eee; /* Add a bottom border for separation */
+    }
+
+    .table-header-cell:last-child,
+    .table-cell:last-child {
+        border-bottom: none; /* Remove bottom border for the very last cell */
+    }
+
+    .table-cell .percentage {
+        font-size: 20px;
+    }
+
+    .table-cell .date,
+    .table-cell .time {
+        font-size: 12px;
     }
 }
