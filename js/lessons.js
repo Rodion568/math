@@ -1028,4 +1028,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         applyFilters();
     }
+    // New code to handle direct links to specific lessons views
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialCourse = urlParams.get('course');
+    if (initialCourse) {
+        showLessonsView(initialCourse);
+    }
 });
