@@ -441,7 +441,8 @@ nav {
 
 .progress-row {
     display: flex;
-    justify-content: space-between; /* Adjusted to space-between for better alignment */
+    justify-content: space-between;
+    /* Adjusted to space-between for better alignment */
     align-items: center;
     padding: 12px 0;
     border-bottom: 1px solid #eee;
@@ -464,30 +465,37 @@ nav {
 
 .progress-label {
     font-size: 16px;
-    color: #003370; /* Standardized color */
-    flex-basis: 30%; /* Give it a fixed basis to align with knowledge check headers */
+    color: #003370;
+    /* Standardized color */
+    flex-basis: 30%;
+    /* Give it a fixed basis to align with knowledge check headers */
     text-align: left;
 }
 
 .progress-label.right-aligned {
     text-align: right;
-    flex-basis: 70%; /* Occupy remaining space */
+    flex-basis: 70%;
+    /* Occupy remaining space */
 }
 
 .progress-item {
-    width: 150px; /* This might need adjustment with flex-basis */
+    width: 150px;
+    /* This might need adjustment with flex-basis */
     font-size: 16px;
     font-weight: 500;
     color: #003370;
     min-width: 120px;
-    text-align: left; /* Align to the left */
+    text-align: left;
+    /* Align to the left */
 }
 
 .progress-dots {
     display: flex;
     gap: 8px;
-    justify-content: flex-end; /* Align dots to the right */
-    flex-grow: 1; /* Allow dots to take up remaining space */
+    justify-content: flex-end;
+    /* Align dots to the right */
+    flex-grow: 1;
+    /* Allow dots to take up remaining space */
 }
 
 .dot {
@@ -601,25 +609,32 @@ nav {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     max-width: 800px;
     margin: 30px auto;
-    display: grid; /* Changed to grid for better control */
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    border: 1px solid #e0e0e0; /* Overall border for the grid */
-    overflow: hidden; /* Ensures border-radius works without internal cell issues */
+    display: grid;
+    /* Changed to grid for better control */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    border: 1px solid #e0e0e0;
+    /* Overall border for the grid */
+    overflow: hidden;
+    /* Ensures border-radius works without internal cell issues */
 }
 
 .knowledge-check-table-container h2 {
-    grid-column: 1 / -1; /* Make the heading span all columns */
+    grid-column: 1 / -1;
+    /* Make the heading span all columns */
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     color: #003370;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee; /* Separator below heading */
+    border-bottom: 1px solid #eee;
+    /* Separator below heading */
 }
 
 .table-header-row {
-    display: contents; /* Allows grid items to be children of the grid container */
+    display: contents;
+    /* Allows grid items to be children of the grid container */
 }
 
 .table-header-cell {
@@ -633,8 +648,10 @@ nav {
     /* Apply borders to each cell individually to create the grid lines */
     border-right: 1px solid #e0e0e0;
     border-left: 1px solid #e0e0e0;
-    border-top: 1px solid #e0e0e0; /* Add top border for headers */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-top: 1px solid #e0e0e0;
+    /* Add top border for headers */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 /* Remove right border for the last header cell */
@@ -649,12 +666,14 @@ nav {
 
 
 .table-row {
-    display: contents; /* Allows grid items to be children of the grid container */
+    display: contents;
+    /* Allows grid items to be children of the grid container */
 }
 
 .table-cell {
     font-size: 15px;
-    color: #003370; /* Default color for all text in cells */
+    color: #003370;
+    /* Default color for all text in cells */
     line-height: 1.5;
     padding: 15px;
     text-align: center;
@@ -662,19 +681,24 @@ nav {
     border-left: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     box-sizing: border-box;
-    display: flex; /* Use flexbox for vertical alignment and stacking content */
+    display: flex;
+    /* Use flexbox for vertical alignment and stacking content */
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
 }
 
 /* Remove right border for the last cell in a row */
-.table-cell:nth-child(3n) { /* Every 3rd cell is the last in a row */
+.table-cell:nth-child(3n) {
+    /* Every 3rd cell is the last in a row */
     border-right: none;
 }
 
 /* Remove left border for the first cell in a row */
-.table-cell:nth-child(3n + 1) { /* Every 1st cell in a row */
+.table-cell:nth-child(3n + 1) {
+    /* Every 1st cell in a row */
     border-left: none;
 }
 
@@ -695,26 +719,26 @@ nav {
 .table-cell .time {
     display: block;
     font-size: 13px;
-    color: #555; /* Standardized secondary color */
+    color: #555;
+    /* Standardized secondary color */
 }
 
 /* Colors for specific cells as per images, applied only to percentage, date, and time */
-.table-cell.green-text .percentage,
-.table-cell.green-text .date,
-.table-cell.green-text .time {
-    color: #4CAF50; /* Green for 87.5% */
+.table-cell.green-text .percentage {
+    color: #4CAF50;
+    /* Green for 87.5% */
 }
 
-.table-cell.red-text .percentage,
-.table-cell.red-text .date,
-.table-cell.red-text .time {
-    color: #F44336; /* Red for 37.5% */
+.table-cell.red-text .percentage {
+    color: #F44336;
+    /* Red for 37.5% */
 }
 
 .table-cell.gray-text .percentage,
 .table-cell.gray-text .date,
 .table-cell.gray-text .time {
-    color: #B0B0B0; /* Gray for 0% */
+    color: #B0B0B0;
+    /* Gray for 0% */
 }
 
 /* Adjustments for the headers in the "Проверка знаний" section to align with image_a5d95f.png */
@@ -727,7 +751,8 @@ nav {
     .knowledge-check-table-container {
         padding: 10px;
         margin: 20px auto;
-        grid-template-columns: 1fr; /* Stack columns on small screens */
+        grid-template-columns: 1fr;
+        /* Stack columns on small screens */
     }
 
     .knowledge-check-table-container h2 {
@@ -739,13 +764,16 @@ nav {
     .table-cell {
         padding: 10px;
         font-size: 14px;
-        border: none; /* Remove individual borders when stacked */
-        border-bottom: 1px solid #eee; /* Add a bottom border for separation */
+        border: none;
+        /* Remove individual borders when stacked */
+        border-bottom: 1px solid #eee;
+        /* Add a bottom border for separation */
     }
 
     .table-header-cell:last-child,
     .table-cell:last-child {
-        border-bottom: none; /* Remove bottom border for the very last cell */
+        border-bottom: none;
+        /* Remove bottom border for the very last cell */
     }
 
     .table-cell .percentage {
